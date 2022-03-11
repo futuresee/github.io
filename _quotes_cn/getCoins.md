@@ -1,5 +1,5 @@
 ---
-title: 交易市场配置
+title: 获取交易对币种
 position_number: 1.1
 type: get
 description: /data/api/v1/getMarketConfig
@@ -12,7 +12,7 @@ left_code_blocks:
     title: Java
     language: java
 right_code_blocks:
-  - code_block: "\n	\"error\": {\n		\"code\": \"\",\n		\"msg\": \"\"\n	},\n	\"msgInfo\": \"\",\n	\"result\": [],\n	\"returnCode\": 0\n}"
+  - code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [],\n\t\"returnCode\": 0\n}"
     title: Response
     language: json
 ---
