@@ -19,7 +19,50 @@ left_code_blocks:
         language: java
 right_code_blocks:
     -
-        code_block: "{\r\n  \"high\": 11776.93,\t\t\t// 24最高\t\t\r\n  \"low\": 11012.17,\t\t\t// 24最低\r\n  \"rate\": 1.3900,                       // 24涨跌幅\r\n  \"price\": 11609.92,                    // 最新成交价\r\n  \"ask\": 11618.25,\t\t    \t// 卖一\r\n  \"bid\": 11604.08,\t\t    \t// 买一\r\n  \"coinVol\": 2944.208780,            \t//成交量\r\n  \"moneyVol\": 33765013.61761934    \t//成交额\r\n}\r\n"
+        code_block:
+            ```javascript
+                {
+                    "error": {
+                        "code": "",
+                        "msg": ""
+                    },
+                    "msgInfo": "",
+                    "result": {
+                        "baseCoin": "",
+                        "baseCoinDisplayPrecision": 0,
+                        "baseCoinPrecision": 0,
+                        "contractSize": 0,
+                        "contractType": "",
+                        "depthPrecisionMerge": 0,
+                        "initLeverage": 0,
+                        "labels": [],
+                        "liquidationFee": 0,
+                        "makerFee": 0,
+                        "maxEntrusts": 0,
+                        "maxOpenOrders": 0,
+                        "minNotional": 0,
+                        "minPrice": 0,
+                        "minQty": 0,
+                        "multiplierDown": 0,
+                        "multiplierUp": 0,
+                        "onboardDate": 0,
+                        "pricePrecision": 0,
+                        "quantityPrecision": 0,
+                        "quoteCoin": "",
+                        "quoteCoinDisplayPrecision": 0,
+                        "quoteCoinPrecision": 0,
+                        "state": 0,
+                        "supportEntrustType": "",
+                        "supportOrderType": "",
+                        "supportTimeInForce": "",
+                        "symbol": "",
+                        "takerFee": 0,
+                        "tradeSwitch": false,
+                        "underlyingType": ""
+                    },
+                    "returnCode": 0
+                }
+            ```
         title: Response
         language: json
 ---
