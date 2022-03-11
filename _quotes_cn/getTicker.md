@@ -1,6 +1,5 @@
 ---
 title: 聚合行情
-position_number: 1.3
 type: get
 description: /data/api/v1/getTicker
 parameters:

@@ -1,6 +1,5 @@
 ---
 title: 所有市场的最新 Ticker
-position_number: 1.4
 type: get
 description: /data/api/v1/getTickers
 parameters:

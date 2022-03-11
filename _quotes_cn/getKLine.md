@@ -1,6 +1,5 @@
 ---
 title: K线数据
-position_number: 1.2
 type: get
 description: /data/api/v1/getKLine
 parameters:

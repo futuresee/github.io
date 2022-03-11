@@ -1,6 +1,5 @@
 ---
 title: 最近市场成交记录
-position_number: 1.6
 type: get
 description: /data/api/v1/getTrades
 parameters:
