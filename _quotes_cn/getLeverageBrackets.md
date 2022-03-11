@@ -1,0 +1,18 @@
+---
+title: 查询所有交易对杠杆分层
+position_number: 1.5
+type: get
+description: /v1/public/leverage/bracket/list
+parameters:
+content_markdown: 注：**此方法不需要签名**
+left_code_blocks:
+    -
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
+        title: Java
+        language: java
+right_code_blocks:
+    -
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"leverageBrackets\": [\n\t\t\t\t{\n\t\t\t\t\t\"bracket\": 0,\n\t\t\t\t\t\"maintMarginRate\": 0,\n\t\t\t\t\t\"maxLeverage\": 0,\n\t\t\t\t\t\"maxNominalValue\": 0,\n\t\t\t\t\t\"maxStartMarginRate\": 0,\n\t\t\t\t\t\"minLeverage\": 0,\n\t\t\t\t\t\"startMarginRate\": 0,\n\t\t\t\t\t\"symbol\": \"\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"symbol\": \"\"\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
+        title: Response
+        language: json
+---

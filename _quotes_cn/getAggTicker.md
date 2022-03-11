@@ -1,22 +1,15 @@
 ---
-title: 获取交易对的深度信息
-position_number: 1.9
+title: 获取指定交易对的聚合行情信息
+position_number: 1.6
 type: get
-description: /v1/public/q/depth
+description: /v1/public/q/agg-ticker
 parameters:
     -
         name: symbol
         type: string
-        mandatory: true
+        mandatory: false
         default: N/A
         description: 交易对
-        ranges:
-    -
-        name: level
-        type:
-        mandatory: true
-        default:
-        description: "档位（min:1,max:50）\t"
         ranges:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
@@ -26,7 +19,7 @@ left_code_blocks:
         language: java
 right_code_blocks:
     -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"a\": [],\n\t\t\"b\": [],\n\t\t\"s\": \"\",\n\t\t\"t\": 0,\n\t\t\"u\": 0\n\t},\n\t\"returnCode\": 0\n}"
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"a\": \"\",\n\t\t\"ap\": \"\",\n\t\t\"bp\": \"\",\n\t\t\"c\": \"\",\n\t\t\"h\": \"\",\n\t\t\"i\": \"\",\n\t\t\"l\": \"\",\n\t\t\"m\": \"\",\n\t\t\"o\": \"\",\n\t\t\"r\": \"\",\n\t\t\"s\": \"\",\n\t\t\"t\": 0,\n\t\t\"v\": \"\"\n\t},\n\t\"returnCode\": 0\n}"
         title: Response
         language: json
 ---

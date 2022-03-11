@@ -1,8 +1,8 @@
 ---
-title: 获取交易对的深度信息
-position_number: 1.9
+title: 获取资金费率
+position_number: 2.1
 type: get
-description: /v1/public/q/depth
+description: /v1/public/q/funding-rate
 parameters:
     -
         name: symbol
@@ -10,13 +10,6 @@ parameters:
         mandatory: true
         default: N/A
         description: 交易对
-        ranges:
-    -
-        name: level
-        type:
-        mandatory: true
-        default:
-        description: "档位（min:1,max:50）\t"
         ranges:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
@@ -26,7 +19,7 @@ left_code_blocks:
         language: java
 right_code_blocks:
     -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"a\": [],\n\t\t\"b\": [],\n\t\t\"s\": \"\",\n\t\t\"t\": 0,\n\t\t\"u\": 0\n\t},\n\t\"returnCode\": 0\n}"
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"fundingRate\": 0,\n\t\t\"nextCollectionTime\": 0,\n\t\t\"symbol\": \"\"\n\t},\n\t\"returnCode\": 0\n}"
         title: Response
         language: json
 ---
