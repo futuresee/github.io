@@ -19,7 +19,7 @@ left_code_blocks:
         language: java
 right_code_blocks:
     -
-        code_block: "{\r\n  \"high\": 11776.93,\t\t\t// 24最高\t\t\r\n  \"low\": 11012.17,\t\t\t// 24最低\r\n  \"rate\": 1.3900,                       // 24涨跌幅\r\n  \"price\": 11609.92,                    // 最新成交价\r\n  \"ask\": 11618.25,\t\t    \t// 卖一\r\n  \"bid\": 11604.08,\t\t    \t// 买一\r\n  \"coinVol\": 2944.208780,            \t//成交量\r\n  \"moneyVol\": 33765013.61761934    \t//成交额\r\n}\r\n"
+        code_block: "{\n	\"error\": {\n		\"code\": \"\",\n		\"msg\": \"\"\n	},\n	\"msgInfo\": \"\",\n	\"result\": [\n		{\n			\"baseCoin\": \"\",\n			\"baseCoinDisplayPrecision\": 0,\n			\"baseCoinPrecision\": 0,\n			\"contractSize\": 0,\n			\"contractType\": \"\",\n			\"depthPrecisionMerge\": 0,\n			\"initLeverage\": 0,\n			\"labels\": [],\n			\"liquidationFee\": 0,\n			\"makerFee\": 0,\n			\"maxEntrusts\": 0,\n			\"maxOpenOrders\": 0,\n			\"minNotional\": 0,\n			\"minPrice\": 0,\n			\"minQty\": 0,\n			\"multiplierDown\": 0,\n			\"multiplierUp\": 0,\n			\"onboardDate\": 0,\n			\"pricePrecision\": 0,\n			\"quantityPrecision\": 0,\n			\"quoteCoin\": \"\",\n			\"quoteCoinDisplayPrecision\": 0,\n			\"quoteCoinPrecision\": 0,\n			\"state\": 0,\n			\"supportEntrustType\": \"\",\n			\"supportOrderType\": \"\",\n			\"supportTimeInForce\": \"\",\n			\"symbol\": \"\",\n			\"takerFee\": 0,\n			\"tradeSwitch\": false,\n			\"underlyingType\": \"\"\n		}\n	],\n	\"returnCode\": 0\n}\n"
         title: Response
         language: json
 ---
