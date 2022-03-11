@@ -2,7 +2,8 @@
 title: 获取交易对币种
 position_number: 1.1
 type: get
-description: /data/api/v1/getMarketConfig
+description: /v1/public/symbol/coins
+
 parameters:
   - name:
     content:
