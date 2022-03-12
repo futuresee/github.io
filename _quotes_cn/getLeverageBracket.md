@@ -1,6 +1,6 @@
 ---
 title: 查询单个交易对杠杆分层
-position_number: 1.4
+position_number: 4
 type: get
 description: /v1/public/leverage/bracket/detail
 parameters:

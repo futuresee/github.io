@@ -1,6 +1,6 @@
 ---
 title: 获取全交易对的聚合行情信息
-position_number: 1.7
+position_number: 16
 type: get
 description: /v1/public/q/agg-tickers
 parameters:

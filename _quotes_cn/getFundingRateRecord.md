@@ -1,6 +1,6 @@
 ---
 title: 获取资金费率记录
-position_number: 2.3
+position_number: 17
 type: get
 description: /v1/public/q/funding-rate-record
 parameters:

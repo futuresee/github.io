@@ -1,6 +1,6 @@
 ---
 title: 获取交易对币种
-position_number: 1.1
+position_number: 1
 type: get
 description: /v1/public/symbol/coins
 

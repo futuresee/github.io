@@ -1,8 +1,8 @@
 ---
-title: 获取指定交易对的聚合行情信息
-position_number: 15
+title: 获取全交易对的行情信息
+position_number: 7
 type: get
-description: /v1/public/q/agg-ticker
+description: /v1/public/q/tickers
 parameters:
     -
         name: symbol
@@ -19,7 +19,7 @@ left_code_blocks:
         language: java
 right_code_blocks:
     -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"a\": \"\",\n\t\t\"ap\": \"\",\n\t\t\"bp\": \"\",\n\t\t\"c\": \"\",\n\t\t\"h\": \"\",\n\t\t\"i\": \"\",\n\t\t\"l\": \"\",\n\t\t\"m\": \"\",\n\t\t\"o\": \"\",\n\t\t\"r\": \"\",\n\t\t\"s\": \"\",\n\t\t\"t\": 0,\n\t\t\"v\": \"\"\n\t},\n\t\"returnCode\": 0\n}"
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"a\": \"\",\n\t\t\t\"c\": \"\",\n\t\t\t\"h\": \"\",\n\t\t\t\"l\": \"\",\n\t\t\t\"o\": \"\",\n\t\t\t\"r\": \"\",\n\t\t\t\"s\": \"\",\n\t\t\t\"t\": 0,\n\t\t\t\"v\": \"\"\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
         title: Response
         language: json
 ---

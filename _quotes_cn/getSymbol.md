@@ -1,6 +1,6 @@
 ---
 title: 获取单个交易对的配置信息
-position_number: 1.2
+position_number: 2
 type: get
 description: /v1/public/symbol/detail
 parameters:

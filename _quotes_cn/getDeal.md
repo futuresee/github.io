@@ -1,6 +1,6 @@
 ---
 title: 获取交易对的最新成交信息
-position_number: 1.8
+position_number: 8
 type: get
 description: /v1/public/q/deal
 parameters:

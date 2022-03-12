@@ -4,40 +4,20 @@
 		"msg": ""
 	},
 	"msgInfo": "",
-	"result": [
-		{
-			"baseCoin": "",
-			"baseCoinDisplayPrecision": 0,
-			"baseCoinPrecision": 0,
-			"contractSize": 0,
-			"contractType": "",
-			"depthPrecisionMerge": 0,
-			"initLeverage": 0,
-			"labels": [],
-			"liquidationFee": 0,
-			"makerFee": 0,
-			"maxEntrusts": 0,
-			"maxOpenOrders": 0,
-			"minNotional": 0,
-			"minPrice": 0,
-			"minQty": 0,
-			"multiplierDown": 0,
-			"multiplierUp": 0,
-			"onboardDate": 0,
-			"pricePrecision": 0,
-			"quantityPrecision": 0,
-			"quoteCoin": "",
-			"quoteCoinDisplayPrecision": 0,
-			"quoteCoinPrecision": 0,
-			"state": 0,
-			"supportEntrustType": "",
-			"supportOrderType": "",
-			"supportTimeInForce": "",
-			"symbol": "",
-			"takerFee": 0,
-			"tradeSwitch": false,
-			"underlyingType": ""
-		}
-	],
+	"result": {
+		"leverageBrackets": [
+			{
+				"bracket": 0,
+				"maintMarginRate": 0,
+				"maxLeverage": 0,
+				"maxNominalValue": 0,
+				"maxStartMarginRate": 0,
+				"minLeverage": 0,
+				"startMarginRate": 0,
+				"symbol": ""
+			}
+		],
+		"symbol": ""
+	},
 	"returnCode": 0
 }

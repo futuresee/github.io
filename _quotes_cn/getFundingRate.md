@@ -1,6 +1,6 @@
 ---
 title: 获取资金费率
-position_number: 2.1
+position_number: 16
 type: get
 description: /v1/public/q/funding-rate
 parameters:

@@ -1,6 +1,6 @@
 ---
 title: 获取所有交易对的指数价格
-position_number: 2.5
+position_number: 11
 type: get
 description: /v1/public/q/index-price
 parameters:
