@@ -1,22 +1,22 @@
 ---
-title: 获取资金费率记录
-position_number: 18
+title: 获取交易对风险基金余额
+position_number: 19
 type: get
-description: /v1/public/q/funding-rate-record
+description: /v1/public/contract/risk-balance
 parameters:
     -
         name: symbol
         type: string
-        mandatory: true
+        mandatory: false
         default: N/A
         description: 交易对
         ranges:
     -
         name: direction
         type:
-        mandatory: true
+        mandatory: false
         default: NEXT
-        description: "方向（PREV:上一页；NEXT:下一页）\t"
+        description: 方向（PREV:上一页；NEXT:下一页）
         ranges: PREV;NEXT
     -
         name: id
@@ -30,7 +30,7 @@ parameters:
         type:
         mandatory: false
         default:
-        description: "条数\t"
+        description: 条数
         ranges:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
@@ -40,7 +40,7 @@ left_code_blocks:
         language: java
 right_code_blocks:
     -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"fundingRate\": 0,\n\t\t\"nextCollectionTime\": 0,\n\t\t\"symbol\": \"\"\n\t},\n\t\"returnCode\": 0\n}"
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"hasNext\": false,\n\t\t\"hasPrev\": false,\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"amount\": 0,\n\t\t\t\t\"coin\": \"\",\n\t\t\t\t\"createdTime\": 0,\n\t\t\t\t\"id\": 0\n\t\t\t}\n\t\t]\n\t},\n\t\"returnCode\": 0\n}"
         title: Response
         language: json
 ---
