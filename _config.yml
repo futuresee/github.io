@@ -96,9 +96,20 @@ defaults:
       _hide_content: true
   -
     scope:
-      type: "trade_cn"
+      type: "order_cn"
     values:
       _hide_content: true
+  -
+    scope:
+      type: "entrust_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "user_cn"
+    values:
+      _hide_content: true
+  -
   -
     scope:
       type: "websocket_cn"
