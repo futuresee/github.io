@@ -35,11 +35,11 @@ collections:
   order_cn:
     title: 限价委托和市价委托
     position_number: 7
-  order_cn:
+  entrust_cn:
     title: 计划委托与止盈止损
     position_number: 8
-  trade_cn:
-    title: 交易API
+  user_cn:
+    title: 用户相关
     position_number: 9
   websocket_cn:
     title: WEBSOCKET
