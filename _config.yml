@@ -21,35 +21,29 @@ collections:
     title: Market data
     position_number: 2
   trade:
-    title: Order
+    title: Trading API
     position_number: 3
-  entrust:
-    title: Entrust
-    position_number: 4
-  user:
-    title: User
-    position_number: 5
   websocket:
     title: WEBSOCKET
-    position_number: 6
+    position_number: 4
   documentation_cn:
     title: 接入说明
-    position_number: 7
+    position_number: 5
   quotes_cn:
     title: 行情数据
-    position_number: 8
+    position_number: 6
   order_cn:
     title: 限价委托和市价委托
-    position_number: 9
+    position_number: 7
   entrust_cn:
     title: 计划委托与止盈止损
-    position_number: 10
+    position_number: 8
   user_cn:
     title: 用户相关
-    position_number: 11
+    position_number: 9
   websocket_cn:
     title: WEBSOCKET
-    position_number: 12
+    position_number: 10
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -67,6 +61,11 @@ exclude:
 defaults:
   -
     scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
       type: "documentation"
     values:
       _hide_content: true
@@ -77,17 +76,7 @@ defaults:
       _hide_content: true
   -
     scope:
-      type: "order"
-    values:
-      _hide_content: true
-  -
-    scope:
-      type: "entrust"
-    values:
-      _hide_content: true
-  -
-    scope:
-      type: "user"
+      type: "trade"
     values:
       _hide_content: true
   -
@@ -120,6 +109,7 @@ defaults:
       type: "user_cn"
     values:
       _hide_content: true
+  -
   -
     scope:
       type: "websocket_cn"
