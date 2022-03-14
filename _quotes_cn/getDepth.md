@@ -13,9 +13,9 @@ parameters:
         ranges:
     -
         name: level
-        type:
+        type: integer
         mandatory: true
-        default:
+        default: N/A
         description: "档位（min:1,max:50）\t"
         ranges:
 content_markdown: 注：**此方法不需要签名**

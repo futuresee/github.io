@@ -5,21 +5,21 @@ type: post
 description: /v1/entrust/update-profit-stop
 parameters:
   - name: profitId
-    type:
+    type: integer
     mandatory: true
-    default:
+    default: N/A
     description: 止盈止损id
     ranges:
   - name: triggerProfitPrice
-    type:
+    type: number
     mandatory: false
-    default:
+    default: N/A
     description: 止盈触发价
     ranges:
   - name: triggerStopPrice
-    type:
+    type: number
     mandatory: false
-    default:
+    default: N/A
     description: 止损触发价
     ranges:
 right_code_blocks:

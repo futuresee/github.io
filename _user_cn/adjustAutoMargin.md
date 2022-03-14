@@ -15,14 +15,14 @@ parameters:
         name: positionSide
         type: string
         mandatory: true
-        default:
+        default: N/A
         description: 仓位方向
         ranges: LONG;SHORT
     -
         name: autoMargin
         type: boolean
         mandatory: true
-        default:
+        default: N/A
         description: 是否开启自动追加保证金
         ranges: true;false
 left_code_blocks:

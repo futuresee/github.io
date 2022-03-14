@@ -6,7 +6,7 @@ description: /v1/entrust/plan-detail
 parameters:
     -
         name: entrustId
-        type: string
+        type: integer
         mandatory: true
         default: N/A
         description: 委托id

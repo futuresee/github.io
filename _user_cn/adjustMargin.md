@@ -13,23 +13,23 @@ parameters:
         ranges:
     -
         name: margin
-        type:
+        type: number
         mandatory: false
-        default:
+        default: N/A
         description: 数量
         ranges:
     -
         name: positionSide
-        type:
+        type: string
         mandatory: false
-        default:
+        default: N/A
         description: 持仓方向：LONG;SHORT
         ranges:
     -
         name: type
-        type:
+        type: string
         mandatory: false
-        default:
+        default: N/A
         description: 调整方向（ADD：增加逐仓保证金；SUB：减少逐仓保证金）
         ranges: ADD;SUB
 left_code_blocks:

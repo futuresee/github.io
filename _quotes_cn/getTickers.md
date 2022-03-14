@@ -4,13 +4,6 @@ position_number: 7
 type: get
 description: /v1/public/q/tickers
 parameters:
-    -
-        name: symbol
-        type: string
-        mandatory: false
-        default: N/A
-        description: 交易对
-        ranges:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -

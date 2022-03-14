@@ -9,7 +9,7 @@ parameters:
         type: integer
         mandatory: true
         default: N/A
-        description: 委托id
+        description: 计划委托id
         ranges:
 left_code_blocks:
     -

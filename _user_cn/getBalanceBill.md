@@ -13,35 +13,35 @@ parameters:
         ranges:
     -
         name: direction
-        type:
-        mandatory: true
+        type: string
+        mandatory: false
         default: NEXT
         description: "方向（PREV:上一页；NEXT:下一页）\t"
         ranges: PREV;NEXT
     -
         name: id
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: id
         ranges:
     -
         name: limit
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: 10
         description: "条数\t"
         ranges:
     -
         name: startTime
-        type:
+        type: integer
         mandatory: false
         default:
         description: 起始时间
         ranges:
     -
         name: endTime
-        type:
+        type: integer
         mandatory: false
         default:
         description: 结束时间

@@ -7,7 +7,7 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: true
+        mandatory: false
         default: N/A
         description: 交易对（不传时查询所有交易对的持仓信息）
         ranges:

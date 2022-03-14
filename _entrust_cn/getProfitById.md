@@ -6,7 +6,7 @@ description: /v1/entrust/profit-detail
 parameters:
     -
         name: profitId
-        type: string
+        type: integer
         mandatory: true
         default: N/A
         description: 止盈止损id

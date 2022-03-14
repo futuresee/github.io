@@ -5,33 +5,33 @@ type: get
 description: /v1/order/list
 parameters:
   - name: page
-    type:
-    mandatory: true
-    default: N/A
+    type: integer
+    mandatory: false
+    default: 1
     description: 页码
     ranges:
   - name: size
-    type:
-    mandatory: true
-    default:
+    type: integer
+    mandatory: false
+    default: 10
     description: 单页数
     ranges:
   - name: startTime
-    type:
-    mandatory: true
-    default:
+    type: integer
+    mandatory: false
+    default: N/A
     description: 开始时间
     ranges:
   - name: endTime
-    type:
-    mandatory: true
-    default:
+    type: integer
+    mandatory: false
+    default: N/A
     description: 结束时间
     ranges:
   - name: state
-    type:
+    type: string
     mandatory: true
-    default:
+    default: NEW
     description: >-
       订单状态
       NEW：新建订单（未成交）；PARTIALLY_FILLED：部分成交；FILLED：全部成交；CANCELED：用户撤销；REJECTED：下单失败；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史）

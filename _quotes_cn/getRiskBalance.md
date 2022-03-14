@@ -13,23 +13,23 @@ parameters:
         ranges:
     -
         name: direction
-        type:
+        type: string
         mandatory: false
         default: NEXT
         description: 方向（PREV:上一页；NEXT:下一页）
         ranges: PREV;NEXT
     -
         name: id
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: id
         ranges:
     -
         name: limit
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: 10
         description: 条数
         ranges:
 content_markdown: 注：**此方法不需要签名**

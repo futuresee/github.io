@@ -7,8 +7,8 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: true
-        default:
+        mandatory: false
+        default: N/A
         description: 交易对（不传时撤销所有交易对）
         ranges:
 left_code_blocks:

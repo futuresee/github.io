@@ -5,7 +5,7 @@ type: get
 description: /v1/order/detail
 parameters:
   - name: orderId
-    type: string
+    type: integer
     mandatory: true
     default: N/A
     description: 订单id

@@ -5,46 +5,25 @@ type: get
 description: /v1/order/trade-list
 parameters:
     -
-        name: symbol
-        type: string
+        name: orderId
+        type: integer
         mandatory: true
         default: N/A
-        description: 交易对
+        description: 订单id
         ranges:
     -
-        name: direction
-        type:
+        name: page
+        type: integer
         mandatory: true
-        default: NEXT
-        description: "方向（PREV:上一页；NEXT:下一页）\t"
-        ranges: PREV;NEXT
-    -
-        name: id
-        type:
-        mandatory: false
-        default:
-        description: id
+        default: 1
+        description: "页码\t"
         ranges:
     -
-        name: limit
-        type:
+        name: size
+        type: integer
         mandatory: false
-        default:
-        description: "条数\t"
-        ranges:
-    -
-        name: startTime
-        type:
-        mandatory: false
-        default:
-        description: 起始时间
-        ranges:
-    -
-        name: endTime
-        type:
-        mandatory: false
-        default:
-        description: 结束时间
+        default: 10
+        description: "单页数\t"
         ranges:
 left_code_blocks:
     -

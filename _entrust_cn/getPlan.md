@@ -4,39 +4,34 @@ position_number: 4
 type: get
 description: /v1/entrust/plan-list
 parameters:
-    -
-        name: symbol
+    - name: symbol
         type: string
         mandatory: true
         default: N/A
         description: "交易对（不传时撤销所有交易对）\t"
         ranges:
-    -
-        name: page
-        type:
-        mandatory: true
-        default:
+    - name: page
+        type: integer
+        mandatory: false
+        default: 1
         description: 页码
         ranges:
-    -
-        name: size
-        type:
+    - name: size
+        type: integer
         mandatory: false
-        default:
+        default: 10
         description: 单页数
         ranges:
-    -
-        name: startTime
-        type:
+    - name: startTime
+        type: integer
         mandatory: false
-        default:
-        description: 起始时间
+        default: N/A
+        description: 开始时间
         ranges:
-    -
-        name: endTime
-        type:
+    - name: endTime
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: 结束时间
         ranges:
     -

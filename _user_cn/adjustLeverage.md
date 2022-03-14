@@ -15,14 +15,14 @@ parameters:
         name: positionSide
         type: string
         mandatory: true
-        default:
+        default: N/A
         description: 仓位方向
         ranges: LONG;SHORT
     -
         name: leverage
         type: integer
         mandatory: true
-        default:
+        default: N/A
         description: 杠杆倍数
         ranges:
 left_code_blocks:
