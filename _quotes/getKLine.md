@@ -1,45 +1,53 @@
 ---
-title: Kline/Candlestick Data
-position_number: 1.2
+title: 获取交易对的k线信息
+position_number: 14
 type: get
-description: /data/api/v1/getKLine
+description: /v1/public/q/kline
 parameters:
     -
-        name: market
+        name: symbol
         type: string
-        mandatory: true
+        mandatory: false
         default: N/A
-        description: Market pair
-        ranges: btc_usdt, eth_usdt...
+        description: 交易对
+        ranges:
     -
-        name: type
-        type: string
+        name: interval
+        type:
         mandatory: true
-        default: N/A
-        description: Kline type
-        ranges: 1min,5min,15min,30min,1hour,6hour,1day,7day,30day
+        default:
+        description: 时间间隔
+        ranges: 1m;5m;15m;30m;1h;4h;1d;1w
     -
-        name: since
-        type: integer
-        mandatory: true
-        default: 0
-        description: Time condition. Control increment
-        ranges: The first time is 0, after that follow the value of the since
-content_markdown: Note：**This method does not require a signature.**
+        name: startTime
+        type:
+        mandatory: false
+        default:
+        description: 起始时间
+        ranges:
+    -
+        name: endTime
+        type:
+        mandatory: false
+        default:
+        description: 结束时间
+        ranges:
+    -
+        name: limit
+        type:
+        mandatory: false
+        default:
+        description: 限制条数
+        ranges:
+content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
-    -
-        code_block: |-
-            def get_klines(self, kwargs:dict):
-                return super(PublicRequestAPI, self).get_klines('GET',Api.get_kline, kwargs)
-        title: Python
-        language: python
 right_code_blocks:
     -
-        code_block: "// [Timestamp, Open price, Highest price, Lowest price, Close price, Volume, Turnover]\r\n{\r\n  \"datas\": [\r\n    [\r\n      1562923200,\r\n      11634.64,  \r\n      11637.22,\r\n      11627.58,\r\n      11631.43,\r\n      1.144578,\r\n      13314.16264138\r\n    ]\r\n  ],\r\n  \"since\": 1562923200\r\n}"
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"a\": 0,\n\t\t\t\"c\": 0,\n\t\t\t\"h\": 0,\n\t\t\t\"l\": 0,\n\t\t\t\"o\": 0,\n\t\t\t\"s\": \"\",\n\t\t\t\"t\": 0,\n\t\t\t\"v\": 0\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
         title: Response
         language: json
 ---

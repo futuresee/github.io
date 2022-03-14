@@ -1,27 +1,25 @@
 ---
-title: Latest Ticker of all Markets
-position_number: 1.4
+title: 获取全交易对的行情信息
+position_number: 7
 type: get
-description: /data/api/v1/getTickers
+description: /v1/public/q/tickers
 parameters:
     -
-        name:
-        content:
-content_markdown: Note：**This method does not require a signature.**
+        name: symbol
+        type: string
+        mandatory: false
+        default: N/A
+        description: 交易对
+        ranges:
+content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -
-        code_block: "public void getTickers() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getTickers\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
-    -
-        code_block: |-
-            def get_tickers(self):
-                return super(PublicRequestAPI, self).get_tickers('GET',Api.get_tickers, {})
-        title: Python
-        language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"ltc_usdt\": {\r\n    \"high\": 106.99,\r\n    \"moneyVol\": 1589953.528784,\r\n    \"rate\": 4.3400,\r\n    \"low\": 97.51,\r\n    \"price\": 105.52,\r\n    \"ask\": 105.61,\r\n    \"bid\": 105.46,\r\n    \"coinVol\": 15507.7052\r\n  },\r\n  \"btc_usdt\": {\r\n    \"high\": 11776.93,\r\n    \"moneyVol\": 33765013.61761934,\r\n    \"rate\": 1.3900,                 \r\n    \"low\": 11012.17,\r\n    \"price\": 11609.92,\r\n    \"ask\": 11618.25,\r\n    \"bid\": 11604.08,\r\n    \"coinVol\": 2944.208780\r\n  }\r\n  ...\r\n}\r\n"
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"a\": \"\",\n\t\t\t\"c\": \"\",\n\t\t\t\"h\": \"\",\n\t\t\t\"l\": \"\",\n\t\t\t\"o\": \"\",\n\t\t\t\"r\": \"\",\n\t\t\t\"s\": \"\",\n\t\t\t\"t\": 0,\n\t\t\t\"v\": \"\"\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
         title: Response
         language: json
 ---

@@ -1,5 +1,5 @@
 ---
-title: Place a New Order
+title: 委托
 position_number: 5
 type: post
 description: /trade/api/v1/order
@@ -9,58 +9,58 @@ parameters:
     type: string
     mandatory: true
     default: N/A
-    description: Access private key
+    description: 访问密钥
     ranges:
 -
     name: nonce
     type: integer
     mandatory: true
     default: N/A
-    description: 13-bit milliseconds
+    description: 13位毫秒数
     ranges:
 -
     name: market
     type: string
     mandatory: true
     default: N/A
-    description: Market pair
+    description: 交易市场
     ranges: btc_usdt, eth_usdt...
 -
     name: price
     type: float
     mandatory: false
     default: N/A
-    description: Order Price
-    ranges: Required when order type is limit price
+    description: 委托价格
+    ranges: 委托类型是限价时必填
 -
     name: number
     type: float
     mandatory: true
     default: N/A
-    description: Order quantity
+    description: 委托数量
     ranges:
 -
     name: type
     type: integer
     mandatory: true
     default: N/A
-    description: Trading type
-    ranges: 1, buy, 0 sell
+    description: 交易类型
+    ranges: 1、买 0、卖
 -
     name: entrustType
     type: integer
     mandatory: true
     default: N/A
-    description: Order type
-    ranges: 0, limit price,1 market price
+    description: 委托类型
+    ranges: 0、限价，1、市价
 content_markdown: |-
-    Note：**The API interface needs to open transaction permissions.**
+    注：**此api接口需要开通交易权限**
 
-    **The limit of incomplete orders is 300, and more orders need to be cancelled first and the delegate order can continue to be initiated.**
+    **未完成订单限制300条，超过300条需要撤单后才可以继续发起委托单**
 
 left_code_blocks:
 -
-    code_block: "public void order() {\n\tMap<String, Object> map = new HashMap<String, Object>();\n\tmap.put(\"accesskey\", accessKey);\n\tmap.put(\"nonce\", System.currentTimeMillis());\n\tmap.put(\"market\", \"btc_usdt\");\n\tmap.put(\"price\", \"10000\");\n\tmap.put(\"number\", \"1.23\");\n\tmap.put(\"type\", 1);\t\t// 0.sell 1.buy\n\tmap.put(\"entrustType\", 0);\t// 0.Limited price  1.Market price matching\n\t// Signature\n\tString signature = HttpUtil.getSignature(map, secretKey);\n\tmap.put(\"signature\", signature);\n\t// \n\tString text = HttpUtil.post(URL + \"/trade/api/v1/order\", map);\n\tSystem.out.println(text);\n}"
+    code_block: "public void order() {\r\n\tMap<String, Object> map = new HashMap<String, Object>();\r\n\tmap.put(\"accesskey\", accessKey);\r\n\tmap.put(\"nonce\", System.currentTimeMillis());\r\n\tmap.put(\"market\", \"btc_usdt\");\r\n\tmap.put(\"price\", \"10000\");\r\n\tmap.put(\"number\", \"1.23\");\r\n\tmap.put(\"type\", 1);\t\t// 0.sell 1.buy\r\n\tmap.put(\"entrustType\", 0);\t// 0.Limited price  1.Market price matching\r\n\t// 签名(en:Signature)\r\n\tString signature = HttpUtil.getSignature(map, secretKey);\r\n\tmap.put(\"signature\", signature);\r\n\t// \r\n\tString text = HttpUtil.post(URL + \"/trade/api/v1/order\", map);\r\n\tSystem.out.println(text);\r\n}"
     title: Java
     language: java
 -

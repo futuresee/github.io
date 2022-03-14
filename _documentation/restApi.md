@@ -6,7 +6,7 @@ parameters:
         name:
         content:
 content_markdown: |-
-    Official:
+    正式:
 
     **https://api.xt.com**
     {: .info}

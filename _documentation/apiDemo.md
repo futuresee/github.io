@@ -1,5 +1,5 @@
 ---
-title: API Library
+title: API 代码库
 position_number: 7
 parameters:
 - name:
@@ -8,19 +8,19 @@ content_markdown: >-
   Java connector
 
 
-  A lightweight Java code library that provides a method for users to directly call the API
+  一个轻量级的Java代码库，提供让用户直接调用API的方法。
 
 
   [https://github.com/xt-com/xt-com-java-demo](https://github.com/xt-com/xt-com-java-demo)
-  
+
 
   <br/>
   Python connector
 
 
-  A lightweight Python code library that provides a method for users to directly call the API
-  
+  一个轻量级的Python代码库，提供让用户直接调用API的方法。
 
+  
   [https://github.com/xt-com/xt-com-python-demo](https://github.com/xt-com/xt-com-python-demo)
 
 
@@ -28,9 +28,9 @@ content_markdown: >-
   Node.js connector
 
 
-  A lightweight Node.js code library that provides a method for users to directly call the API
+  一个轻量级的Node.js代码库，提供让用户直接调用API的方法。
 
-
+  
   [https://github.com/xt-com/xt-com-nodejs-demo](https://github.com/xt-com/xt-com-nodejs-demo)
 
 left_code_blocks:

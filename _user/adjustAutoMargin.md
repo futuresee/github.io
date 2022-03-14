@@ -1,0 +1,38 @@
+---
+title: 修改自动追加保证金
+position_number: 10
+type: post
+description: /v1/position/auto-margin
+parameters:
+    -
+        name: symbol
+        type: string
+        mandatory: true
+        default: N/A
+        description: 交易对
+        ranges:
+    -
+        name: positionSide
+        type: string
+        mandatory: true
+        default:
+        description: 仓位方向
+        ranges: LONG;SHORT
+    -
+        name: autoMargin
+        type: boolean
+        mandatory: true
+        default:
+        description: 是否开启自动追加保证金
+        ranges: true;false
+left_code_blocks:
+    -
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        title: Java
+        language: java
+right_code_blocks:
+    -
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {},\n\t\"returnCode\": 0\n}"
+        title: Response
+        language: json
+---

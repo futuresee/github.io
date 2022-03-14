@@ -1,31 +1,32 @@
 ---
-title: Market Depth Data
-position_number: 1.5
+title: 获取交易对的深度信息
+position_number: 9
 type: get
-description: /data/api/v1/getDepth
+description: /v1/public/q/depth
 parameters:
     -
-        name: market
+        name: symbol
         type: string
         mandatory: true
         default: N/A
-        description: Market pair
-        ranges: btc_usdt, eth_usdt...
-content_markdown: Note：**This method does not require a signature.**
+        description: 交易对
+        ranges:
+    -
+        name: level
+        type:
+        mandatory: true
+        default:
+        description: "档位（min:1,max:50）\t"
+        ranges:
+content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -
-        code_block: "public void getDepth() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getDepth?market=btc_usdt\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
-    -
-        code_block: |-
-            def get_depth(self, kwargs):
-                return super(PublicRequestAPI, self).get_depth('GET',Api.get_depth,kwargs)
-        title: Python
-        language: python
 right_code_blocks:
     -
-        code_block: "{\r\n  \"last\": 11591.26,     // Latest transaction price\r\n  \"asks\": [             // Seller\r\n    [\r\n      11594.80,         //Turnover\r\n      0.049472          //Volume\r\n    ],\r\n    [\r\n      11594.86,\r\n      0.048462\r\n    ]\r\n  ],\r\n  \"bids\": [             //Buyer\r\n       [\r\n         11590.06,\r\n         0.188749\r\n       ],\r\n       [\r\n         11588.42,\r\n         0.030403\r\n       ]\r\n   ]\r\n}"
+        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"a\": [],\n\t\t\"b\": [],\n\t\t\"s\": \"\",\n\t\t\"t\": 0,\n\t\t\"u\": 0\n\t},\n\t\"returnCode\": 0\n}"
         title: Response
         language: json
 ---

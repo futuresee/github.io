@@ -1,34 +1,33 @@
 ---
-title: Signing Steps
+title: 签名步骤
 position_number: 5
 parameters:
 - name:
 content:
 content_markdown: >-
-    Standardize the request to calculate signature. When HMAC is used for signature calculation, the calculation result using different content will be completely different. Therefore, before performing signature calculation, please standardize the request. The following takes the query of an order details request as an example:
+    规范要计算签名的请求 因为使用 HMAC
+    进行签名计算时，使用不同内容计算得到的结果会完全不同。所以在进行签名计算前，请先对请求进行规范化处理。下面以查询某订单详情请求为例进行说明：
 
 
     https://api.xt.com/trade/api/v1/getOrder?accesskey=\{AccessKey\}&market=\{Market\}&nonce=\{Timestamp\}&id=\{OrderId\}&signature=\{Signature\}
 
 
-    Sort the parameter names according to the order of ASCII codes, and concatenate each parameter with the character "&".
+    按照ASCII码的顺序对参数名进行排序,将各参数使用字符 “&” 连接，例如下面就是排序之后结果：
 
 
     accesskey=myAccessKey&id=123&market=btc\_usdt&nonce=1562919832183
 
 
-    Note that the value of nonce is a 13-bit millisecond number.
+    需要注意的是nonce的值为13位毫秒数时间戳
 
 
-    Use the Secret Key obtained from the website to sign the HmacSHA256 parameter string generated above.
-
-    For example, the signature of the above parameters results:
+    使用网站申请得到的Secret Key对上面生成的参数串进行 HmacSHA256 签名。例如上述参数进行签名的结果：
 
 
     97b7b71741ca0aec6e0404a5b1c7cb2a78e7bd6c2a8088dbd84a20129dee4fe7
 
 
-    Finally, the signature is assigned to the parameter name signature and submitted to the server.
+    最后把签名赋值到参数名signature并提交到服务器
 left_code_blocks:
 - code_block:
   title:

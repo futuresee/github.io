@@ -1,27 +1,22 @@
 ---
-title: Basic Information of the Interface
+title: 接口的基本信息
 position_number: 2
 parameters:
 - name:
 content:
 content_markdown: >-
-    Due to the reasons of high latency and poor stability, it is not recommend
-    to access the XT API through a proxy.
+    鉴于延迟高和稳定性差等原因，不建议通过代理的方式访问API。
 
 
-    GET request parameters are put in query Params, POST request parameters are
-    put in request body, please do not put parameters in query Params and
-    request body at the same time
+    GET请求参数放入query Params中，POST请求参数放入request body中，请不要将参数同时放入query
+    Params和request body中
 
 
-    The request header information is set to:
-    Content-Type=application/x-www-form-urlencoded
+    请求头信息请设置为：Content-Type=application/x-www-form-urlencoded
 
 
-    In addition to the parameters required by the interface itself, signature,
-    which is the signature parameter, needs to be passed in the query Params or
-    request body. The interface that does not need to pass the signature
-    parameter will be additionally explained.&nbsp;
+    除了接口本身所需的参数外，还需要在query Params 或 request body中传递 signature,
+    即签名参数，不需要传递签名参数的接口会额外说明。
 left_code_blocks:
 - code_block:
   title:
@@ -31,3 +26,5 @@ right_code_blocks:
   title:
   language:
 ---
+
+

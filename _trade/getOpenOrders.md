@@ -1,5 +1,5 @@
 ---
-title: Get Uncompleted Orders
+title: 获取未完成订单
 position_number: 10
 type: get
 description: /trade/api/v1/getOpenOrders
@@ -9,40 +9,40 @@ parameters:
     type: string
     mandatory: true
     default: N/A
-    description: Access private key
+    description: 访问密钥
     ranges:
 -
     name: nonce
     type: integer
     mandatory: true
     default: N/A
-    description: 13-bit milliseconds
+    description: 13位毫秒数
     ranges:
 -
     name: market
     type: string
     mandatory: true
     default: N/A
-    description: Market pair
+    description: 交易市场
     ranges: btc_usdt, eth_usdt...
 -
     name: page
     type: integer
     mandatory: false
     default: '1'
-    description: page number
+    description: 页码
     ranges:
 -
     name: pageSize
     type: integer
     mandatory: false
     default: '10'
-    description: Order quantities
+    description: 订单数量
     ranges: '[10-1000]'
 content_markdown:
 left_code_blocks:
 -
-    code_block: "public void getOpenOrders() {\n\tMap<String, Object> map = new HashMap<String, Object>();\n\tmap.put(\"accesskey\", accessKey);\n\tmap.put(\"nonce\", System.currentTimeMillis());\n\tmap.put(\"market\", \"btc_usdt\");\n\tmap.put(\"page\", 1);\n\tmap.put(\"pageSize\", 10);\n\t\n\t// Signature\n\tString signature = HttpUtil.getSignature(map, secretKey);\n\tmap.put(\"signature\", signature);\n\t\n\tString text = HttpUtil.get(URL + \"/trade/api/v1/getOpenOrders\", map);\n\tSystem.out.println(text);\n}"
+    code_block: "public void getOpenOrders() {\r\n\tMap<String, Object> map = new HashMap<String, Object>();\r\n\tmap.put(\"accesskey\", accessKey);\r\n\tmap.put(\"nonce\", System.currentTimeMillis());\r\n\tmap.put(\"market\", \"btc_usdt\");\r\n\tmap.put(\"page\", 1);\r\n\tmap.put(\"pageSize\", 10);\r\n\t\r\n\t// 签名 (en:Signature)\r\n\tString signature = HttpUtil.getSignature(map, secretKey);\r\n\tmap.put(\"signature\", signature);\r\n\t\r\n\tString text = HttpUtil.get(URL + \"/trade/api/v1/getOpenOrders\", map);\r\n\tSystem.out.println(text);\r\n}"
     title: Java
     language: java
 -
