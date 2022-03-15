@@ -20,13 +20,13 @@ right_code_blocks:
     -
         code_block: |-
             {
-             "error": {
-              "code": "",
-              "msg": ""
-             },
-             "msgInfo": "",
-             "result": [],
-             "returnCode": 0
+              "error": {
+                "code": "",
+                "msg": ""
+              },
+              "msgInfo": "",
+              "result": [],
+              "returnCode": 0
             }
         title: Response
         language: json
