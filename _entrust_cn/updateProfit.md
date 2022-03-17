@@ -23,7 +23,16 @@ parameters:
     description: 止损触发价
     ranges:
 right_code_blocks:
-  - code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {},\n\t\"returnCode\": 0\n}"
+  - code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": {},
+        "returnCode": 0
+      }
     title: Response
     language: json
 ---

@@ -31,8 +31,31 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"fee\": 0,\n\t\t\t\t\"feeCoin\": \"\",\n\t\t\t\t\"orderId\": 0,\n\t\t\t\t\"price\": 0,\n\t\t\t\t\"quantity\": 0,\n\t\t\t\t\"symbol\": \"\",\n\t\t\t\t\"timestamp\": 0\n\t\t\t}\n\t\t],\n\t\t\"page\": 0,\n\t\t\"ps\": 0,\n\t\t\"total\": 0\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": {
+          "items": [
+            {
+              "fee": 0, //手续费
+              "feeCoin": "", //手续费币种
+              "orderId": 0, //订单id
+              "price": 0, //成交价格
+              "quantity": 0, //成交数量
+              "symbol": "", //交易对
+              "timestamp": 0 //时间
+            }
+          ],
+          "page": 0,
+          "ps": 0,
+          "total": 0
+        },
+        "returnCode": 0
+      }
+    title: Response
+    language: json
 ---

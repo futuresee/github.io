@@ -39,8 +39,28 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"fundingRate\": 0,\n\t\t\"nextCollectionTime\": 0,\n\t\t\"symbol\": \"\"\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": {
+          "hasNext": false, //是否有下一页
+          "hasPrev": false, //是否有上一页
+          "items": [ //数据列表
+            {
+              "collectionInternal": 0, //收取时间间隔（秒）
+              "createdTime": 0, //时间
+              "fundingRate": 0, //最新资金费率
+              "id": 0, //id
+              "symbol": "" //交易对
+            }
+          ]
+        },
+        "returnCode": 0
+      }
+    title: Response
+    language: json
 ---

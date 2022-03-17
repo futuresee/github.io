@@ -48,8 +48,16 @@ left_code_blocks:
     title: Java
     language: java
 right_code_blocks:
--
-    code_block: "{\r\n  \"code\": 200,\r\n  \"data\": [\r\n    {\r\n      \"msg\": \"The order has been canceled successfully\",\r\n      \"code\": 120,\r\n      \"id\": 156293034776986\r\n    },\r\n    {\r\n      \"msg\": \"The order has been canceled successfully\",\r\n      \"code\": 120,\r\n      \"id\": 156293034776987\r\n    },\r\n    {\r\n      \"msg\": \"Failed to cancel the order since it does not exist or has been canceled\",\r\n      \"code\": 121,\r\n      \"id\": 156293034776988\r\n    }\r\n  ],\r\n  \"info\": \"The order has been canceled successfully\"\r\n}"
+- code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": true,
+        "returnCode": 0
+      }
     title: Response
     language: json
 ---

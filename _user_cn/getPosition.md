@@ -17,8 +17,31 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"autoMargin\": false,\n\t\t\t\"availableCloseSize\": 0,\n\t\t\t\"closeOrderSize\": 0,\n\t\t\t\"entryPrice\": 0,\n\t\t\t\"isolatedMargin\": 0,\n\t\t\t\"leverage\": 0,\n\t\t\t\"openOrderMarginFrozen\": 0,\n\t\t\t\"positionSide\": \"\",\n\t\t\t\"positionSize\": 0,\n\t\t\t\"positionType\": \"\",\n\t\t\t\"realizedProfit\": 0,\n\t\t\t\"symbol\": \"\"\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": [
+          {
+            "autoMargin": false, //是否自动追加保证金
+            "availableCloseSize": 0, //可平仓数量（张）
+            "closeOrderSize": 0, //平仓挂单数量（张）
+            "entryPrice": 0, //开仓均价
+            "isolatedMargin": 0, //逐仓保证金
+            "leverage": 0, //杠杆倍数
+            "openOrderMarginFrozen": 0, //开仓订单保证金占用
+            "positionSide": "", //持仓方向
+            "positionSize": 0, //持仓数量（张）
+            "positionType": "", //仓位类型
+            "realizedProfit": 0, //已实现盈亏
+            "symbol": "" //交易对
+          }
+        ],
+        "returnCode": 0
+      }
+    title: Response
+    language: json
 ---

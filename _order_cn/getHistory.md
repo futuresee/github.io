@@ -51,7 +51,42 @@ left_code_blocks:
     title: Java
     language: java
 right_code_blocks:
-  - code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"avgPrice\": 0,\n\t\t\t\t\"closePosition\": false,\n\t\t\t\t\"closeProfit\": 0,\n\t\t\t\t\"createdTime\": 0,\n\t\t\t\t\"executedQty\": 0,\n\t\t\t\t\"forceClose\": false,\n\t\t\t\t\"marginFrozen\": 0,\n\t\t\t\t\"orderId\": 0,\n\t\t\t\t\"orderSide\": \"\",\n\t\t\t\t\"orderType\": \"\",\n\t\t\t\t\"origQty\": 0,\n\t\t\t\t\"positionSide\": \"\",\n\t\t\t\t\"price\": 0,\n\t\t\t\t\"sourceId\": 0,\n\t\t\t\t\"state\": \"\",\n\t\t\t\t\"symbol\": \"\",\n\t\t\t\t\"timeInForce\": \"\",\n\t\t\t\t\"triggerProfitPrice\": 0,\n\t\t\t\t\"triggerStopPrice\": 0\n\t\t\t}\n\t\t],\n\t\t\"page\": 0,\n\t\t\"ps\": 0,\n\t\t\"total\": 0\n\t},\n\t\"returnCode\": 0\n}"
+  - code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": {
+          "hasNext": false, //是否有下一页
+          "hasPrev": false, //是否有上一页
+          "items": [ //数据列表
+            {
+              "avgPrice": 0, //成交均价
+              "closePosition": false, //是否条件全平仓
+              "closeProfit": 0, //平仓盈亏
+              "createdTime": 0, //创建时间
+              "executedQty": 0, //已成交数量（张）
+              "forceClose": false, //是否是全平订单
+              "marginFrozen": 0, //占用保证金
+              "orderId": 0, //订单id
+              "orderSide": "", //买卖方向
+              "orderType": "", //订单类型
+              "origQty": 0, //数量（张）
+              "positionSide": "", //持仓方向
+              "price": 0, //委托价格
+              "sourceId": 0, //条件触发id
+              "state": "", //订单状态 NEW：新建订单（未成交）；PARTIALLY_FILLED：部分成交；PARTIALLY_CANCELED：部分撤销；FILLED：全部成交；CANCELED：已撤销；REJECTED：下单失败；EXPIRED：已过期
+              "symbol": "", //交易对
+              "timeInForce": "", //有效类型
+              "triggerProfitPrice": 0, //止盈触发价
+              "triggerStopPrice": 0 //止损触发价
+            }
+          ]
+        },
+        "returnCode": 0
+      }
     title: Response
     language: json
 ---

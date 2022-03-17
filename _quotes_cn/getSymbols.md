@@ -11,8 +11,50 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"baseCoin\": \"\",\n\t\t\t\"baseCoinDisplayPrecision\": 0,\n\t\t\t\"baseCoinPrecision\": 0,\n\t\t\t\"contractSize\": 0,\n\t\t\t\"contractType\": \"\",\n\t\t\t\"depthPrecisionMerge\": 0,\n\t\t\t\"initLeverage\": 0,\n\t\t\t\"labels\": [],\n\t\t\t\"liquidationFee\": 0,\n\t\t\t\"makerFee\": 0,\n\t\t\t\"maxEntrusts\": 0,\n\t\t\t\"maxOpenOrders\": 0,\n\t\t\t\"minNotional\": 0,\n\t\t\t\"minPrice\": 0,\n\t\t\t\"minQty\": 0,\n\t\t\t\"multiplierDown\": 0,\n\t\t\t\"multiplierUp\": 0,\n\t\t\t\"onboardDate\": 0,\n\t\t\t\"pricePrecision\": 0,\n\t\t\t\"quantityPrecision\": 0,\n\t\t\t\"quoteCoin\": \"\",\n\t\t\t\"quoteCoinDisplayPrecision\": 0,\n\t\t\t\"quoteCoinPrecision\": 0,\n\t\t\t\"state\": 0,\n\t\t\t\"supportEntrustType\": \"\",\n\t\t\t\"supportOrderType\": \"\",\n\t\t\t\"supportTimeInForce\": \"\",\n\t\t\t\"symbol\": \"\",\n\t\t\t\"takerFee\": 0,\n\t\t\t\"tradeSwitch\": false,\n\t\t\t\"underlyingType\": \"\"\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": [
+          {
+            "baseCoin": "", //标的资产
+            "baseCoinDisplayPrecision": 0, //标的币种显示精度
+            "baseCoinPrecision": 0, //标的币种精度
+            "contractSize": 0, //合约乘数（面值）
+            "contractType": "", //合约类型，永续，交割
+            "depthPrecisionMerge": 0, //盘口精度合并
+            "initLeverage": 0, //初始杠杆倍数
+            "labels": [], //标签
+            "liquidationFee": 0, //强平手续费
+            "makerFee": 0, //maker手续费
+            "maxEntrusts": 0, //最多open条件单
+            "maxOpenOrders": 0, //最多open订单
+            "minNotional": 0, //最小名义价值
+            "minPrice": 0, //最小价格
+            "minQty": 0, //最小数量
+            "multiplierDown": 0, //限价卖单下限百分比
+            "multiplierUp": 0, //限价买单价格上限百分比
+            "onboardDate": 0, //上线时间
+            "pricePrecision": 0, //价格精度
+            "quantityPrecision": 0, //数量精度
+            "quoteCoin": "", //报价资产
+            "quoteCoinDisplayPrecision": 0, //报价币种显示精度
+            "quoteCoinPrecision": 0, //报价币种精度
+            "state": 0, //状态
+            "supportEntrustType": "", //支持计划委托类型
+            "supportOrderType": "", //支持订单类型
+            "supportTimeInForce": "", //支持有效方式
+            "symbol": "", //交易对
+            "takerFee": 0, //taker手续费
+            "tradeSwitch": false, //交易对开关
+            "underlyingType": "" //标的类型，币本位，u本位
+          }
+        ],
+        "returnCode": 0
+      }
+    title: Response
+    language: json
 ---

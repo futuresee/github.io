@@ -9,8 +9,24 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"availableBalance\": 0,\n\t\t\t\"coin\": \"\",\n\t\t\t\"isolatedMargin\": 0,\n\t\t\t\"openOrderMarginFrozen\": 0,\n\t\t\t\"walletBalance\": 0\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": [
+          {
+            "availableBalance": 0, //可用余额
+            "coin": "", //币种
+            "isolatedMargin": 0, //逐仓保证金冻结
+            "openOrderMarginFrozen": 0, //订单冻结
+            "walletBalance": 0 //钱包余额
+          }
+        ],
+        "returnCode": 0
+      }
+    title: Response
+    language: json
 ---
