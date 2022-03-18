@@ -53,30 +53,30 @@ left_code_blocks:
         language: java
 right_code_blocks:
     - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": {
-          "hasNext": false, //是否有下一页
-          "hasPrev": false, //是否有上一页
-          "items": [ //数据列表
-            {
-              "afterAmount": 0, //变动后余额
-              "amount": 0, //数量
-              "coin": "", //币种
-              "createdTime": 0, //时间
-              "id": 0, //id
-              "side": "", //ADD:划入;SUB:转出
-              "symbol": "", //交易对
-              "type": "" //EXCHANGE:划转;CLOSE_POSITION:平仓盈亏;TAKE_OVER:仓位接管;QIANG_PING_MANAGER:强平管理费（手续费）;FUND:资金费用;FEE:手续费 (开仓、平仓、强平);ADL:自动减仓;TAKE_OVER:仓位接管MERGE:仓位合并
-            }
-          ]
-        },
-        "returnCode": 0
-      }
-    title: Response
-    language: json
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "hasNext": false, //是否有下一页
+            "hasPrev": false, //是否有上一页
+            "items": [ //数据列表
+              {
+                "afterAmount": 0, //变动后余额
+                "amount": 0, //数量
+                "coin": "", //币种
+                "createdTime": 0, //时间
+                "id": 0, //id
+                "side": "", //ADD:划入;SUB:转出
+                "symbol": "", //交易对
+                "type": "" //EXCHANGE:划转;CLOSE_POSITION:平仓盈亏;TAKE_OVER:仓位接管;QIANG_PING_MANAGER:强平管理费（手续费）;FUND:资金费用;FEE:手续费 (开仓、平仓、强平);ADL:自动减仓;TAKE_OVER:仓位接管MERGE:仓位合并
+              }
+            ]
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---
