@@ -32,30 +32,30 @@ left_code_blocks:
         language: java
 right_code_blocks:
     - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": {
-          "items": [
-            {
-              "fee": 0, //手续费
-              "feeCoin": "", //手续费币种
-              "orderId": 0, //订单id
-              "price": 0, //成交价格
-              "quantity": 0, //成交数量
-              "symbol": "", //交易对
-              "timestamp": 0 //时间
-            }
-          ],
-          "page": 0,
-          "ps": 0,
-          "total": 0
-        },
-        "returnCode": 0
-      }
-    title: Response
-    language: json
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "items": [
+              {
+                "fee": 0, //手续费
+                "feeCoin": "", //手续费币种
+                "orderId": 0, //订单id
+                "price": 0, //成交价格
+                "quantity": 0, //成交数量
+                "symbol": "", //交易对
+                "timestamp": 0 //时间
+              }
+            ],
+            "page": 0,
+            "ps": 0,
+            "total": 0
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---
