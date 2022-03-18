@@ -1,6 +1,6 @@
 ---
 title: 数据压缩
-position_number: 2
+#position_number: 2
 type:
 description:
 parameters:
