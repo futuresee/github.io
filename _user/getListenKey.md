@@ -1,7 +1,7 @@
 ---
 title: 获取listenKey
-position_number: 16
-type: get
+position_number: 1.1
+type: post
 description: /v1/user/listen-key
 parameters:
     -
@@ -17,8 +17,16 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {},
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

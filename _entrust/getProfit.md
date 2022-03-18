@@ -13,30 +13,30 @@ parameters:
         ranges:
     -
         name: page
-        type:
-        mandatory: true
-        default:
+        type: integer
+        mandatory: false
+        default: 1
         description: 页码
         ranges:
     -
         name: size
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: 10
         description: 单页数
         ranges:
     -
         name: startTime
-        type:
+        type: integer
         mandatory: false
-        default:
-        description: 起始时间
+        default: N/A
+        description: 开始时间
         ranges:
     -
         name: endTime
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: 结束时间
         ranges:
     -
@@ -56,8 +56,36 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"createdTime\": 0,\n\t\t\t\t\"entryPrice\": 0,\n\t\t\t\t\"executedQty\": 0,\n\t\t\t\t\"isolatedMargin\": 0,\n\t\t\t\t\"origQty\": 0,\n\t\t\t\t\"positionSide\": \"\",\n\t\t\t\t\"positionSize\": 0,\n\t\t\t\t\"profitId\": 0,\n\t\t\t\t\"state\": \"\",\n\t\t\t\t\"symbol\": \"\",\n\t\t\t\t\"triggerProfitPrice\": 0,\n\t\t\t\t\"triggerStopPrice\": 0\n\t\t\t}\n\t\t],\n\t\t\"page\": 0,\n\t\t\"ps\": 0,\n\t\t\"total\": 0\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "items": [
+              {
+                "createdTime": 0, //时间
+                "entryPrice": 0, //开仓均价
+                "executedQty": 0, //实际成交
+                "isolatedMargin": 0, //逐仓保证金
+                "origQty": 0, //数量（张）
+                "positionSide": "", //仓位方向
+                "positionSize": 0, //持仓数量（张）
+                "profitId": 0, //委托id
+                "state": "", //订单状态 NOT_TRIGGERED：新建委托（未触发）；TRIGGERING：触发中；TRIGGERED：已触发；USER_REVOCATION：用户撤销；PLATFORM_REVOCATION：平台撤销（拒绝）；EXPIRED：已过期
+                "symbol": "", //交易对
+                "triggerProfitPrice": 0, //止盈价格
+                "triggerStopPrice": 0 //止损价格
+              }
+            ],
+            "page": 0,
+            "ps": 0,
+            "total": 0
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

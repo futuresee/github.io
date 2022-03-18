@@ -13,35 +13,35 @@ parameters:
         ranges:
     -
         name: direction
-        type:
-        mandatory: true
+        type: string
+        mandatory: false
         default: NEXT
         description: "方向（PREV:上一页；NEXT:下一页）\t"
         ranges: PREV;NEXT
     -
         name: id
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: id
         ranges:
     -
         name: limit
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: 10
         description: "条数\t"
         ranges:
     -
         name: startTime
-        type:
+        type: integer
         mandatory: false
         default:
         description: 起始时间
         ranges:
     -
         name: endTime
-        type:
+        type: integer
         mandatory: false
         default:
         description: 结束时间
@@ -52,8 +52,38 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"hasNext\": false,\n\t\t\"hasPrev\": false,\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"closePosition\": false,\n\t\t\t\t\"createdTime\": 0,\n\t\t\t\t\"entrustId\": 0,\n\t\t\t\t\"entrustType\": \"\",\n\t\t\t\t\"marketOrderLevel\": 0,\n\t\t\t\t\"orderSide\": \"\",\n\t\t\t\t\"ordinary\": true,\n\t\t\t\t\"origQty\": 0,\n\t\t\t\t\"positionSide\": \"\",\n\t\t\t\t\"price\": 0,\n\t\t\t\t\"state\": \"\",\n\t\t\t\t\"stopPrice\": 0,\n\t\t\t\t\"symbol\": \"\",\n\t\t\t\t\"timeInForce\": \"\",\n\t\t\t\t\"triggerPriceType\": \"\"\n\t\t\t}\n\t\t]\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "hasNext": false, //是否有下一页
+            "hasPrev": false, //是否有上一页
+            "items": [ //数据列表
+              {
+                "closePosition": false, //是否触发全平
+                "createdTime": 0, //创建时间
+                "entrustId": 0, //委托id
+                "entrustType": "", //委托类型
+                "marketOrderLevel": 0, //市价最优档
+                "orderSide": "", //买卖方向
+                "ordinary": true,
+                "origQty": 0, //数量（张）
+                "positionSide": "", //持仓方向
+                "price": 0, //订单价格
+                "state": "", //订单状态 NOT_TRIGGERED：新建委托（未触发）；TRIGGERING：触发中；TRIGGERED：已触发；USER_REVOCATION：用户撤销；PLATFORM_REVOCATION：平台撤销（拒绝）；EXPIRED：已过期
+                "stopPrice": 0, //触发价格
+                "symbol": "", //交易对
+                "timeInForce": "", //有效方式
+                "triggerPriceType": "" //触发价格类型
+              }
+            ]
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

@@ -7,7 +7,7 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
         description: 交易对
         ranges:
@@ -18,8 +18,30 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"leverageBrackets\": [\n\t\t\t{\n\t\t\t\t\"bracket\": 0,\n\t\t\t\t\"maintMarginRate\": 0,\n\t\t\t\t\"maxLeverage\": 0,\n\t\t\t\t\"maxNominalValue\": 0,\n\t\t\t\t\"maxStartMarginRate\": 0,\n\t\t\t\t\"minLeverage\": 0,\n\t\t\t\t\"startMarginRate\": 0,\n\t\t\t\t\"symbol\": \"\"\n\t\t\t}\n\t\t],\n\t\t\"symbol\": \"\"\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "leverageBrackets": [
+              {
+                "bracket": 0, //档位
+                "maintMarginRate": 0, //维持保证金率
+                "maxLeverage": 0, //最大杠杆倍数
+                "maxNominalValue": 0, //该层最大名义价值
+                "maxStartMarginRate": 0, //最大起始保证金率
+                "minLeverage": 0, //最小杠杆倍数
+                "startMarginRate": 0, //起始保证金率
+                "symbol": "" //交易对
+              }
+            ],
+            "symbol": ""
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

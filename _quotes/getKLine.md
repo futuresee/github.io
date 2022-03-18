@@ -46,8 +46,27 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"a\": 0,\n\t\t\t\"c\": 0,\n\t\t\t\"h\": 0,\n\t\t\t\"l\": 0,\n\t\t\t\"o\": 0,\n\t\t\t\"s\": \"\",\n\t\t\t\"t\": 0,\n\t\t\t\"v\": 0\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": [
+            {
+              "a": 0, //成交量
+              "c": 0, //结束价
+              "h": 0, //最高价
+              "l": 0, //最低价
+              "o": 0, //开始价
+              "s": "", //交易对
+              "t": 0, //时间
+              "v": 0 //成交额
+            }
+          ],
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

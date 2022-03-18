@@ -13,23 +13,23 @@ parameters:
         ranges:
     -
         name: direction
-        type:
+        type: string
         mandatory: false
         default: NEXT
         description: 方向（PREV:上一页；NEXT:下一页）
         ranges: PREV;NEXT
     -
         name: id
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: id
         ranges:
     -
         name: limit
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: 10
         description: 条数
         ranges:
 content_markdown: 注：**此方法不需要签名**
@@ -39,8 +39,27 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"hasNext\": false,\n\t\t\"hasPrev\": false,\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"amount\": 0,\n\t\t\t\t\"coin\": \"\",\n\t\t\t\t\"createdTime\": 0,\n\t\t\t\t\"id\": 0\n\t\t\t}\n\t\t]\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "hasNext": false, //是否有下一页
+            "hasPrev": false, //是否有上一页
+            "items": [ //数据列表
+              {
+                "amount": 0, //余额
+                "coin": "", //币种
+                "createdTime": 0, //时间
+                "id": 0 //id
+              }
+            ]
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

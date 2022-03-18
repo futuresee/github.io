@@ -5,46 +5,25 @@ type: get
 description: /v1/order/trade-list
 parameters:
     -
-        name: symbol
-        type: string
+        name: orderId
+        type: integer
         mandatory: true
         default: N/A
-        description: 交易对
+        description: 订单id
         ranges:
     -
-        name: direction
-        type:
+        name: page
+        type: integer
         mandatory: true
-        default: NEXT
-        description: "方向（PREV:上一页；NEXT:下一页）\t"
-        ranges: PREV;NEXT
-    -
-        name: id
-        type:
-        mandatory: false
-        default:
-        description: id
+        default: 1
+        description: "页码\t"
         ranges:
     -
-        name: limit
-        type:
+        name: size
+        type: integer
         mandatory: false
-        default:
-        description: "条数\t"
-        ranges:
-    -
-        name: startTime
-        type:
-        mandatory: false
-        default:
-        description: 起始时间
-        ranges:
-    -
-        name: endTime
-        type:
-        mandatory: false
-        default:
-        description: 结束时间
+        default: 10
+        description: "单页数\t"
         ranges:
 left_code_blocks:
     -
@@ -52,8 +31,31 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"fee\": 0,\n\t\t\t\t\"feeCoin\": \"\",\n\t\t\t\t\"orderId\": 0,\n\t\t\t\t\"price\": 0,\n\t\t\t\t\"quantity\": 0,\n\t\t\t\t\"symbol\": \"\",\n\t\t\t\t\"timestamp\": 0\n\t\t\t}\n\t\t],\n\t\t\"page\": 0,\n\t\t\"ps\": 0,\n\t\t\"total\": 0\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "items": [
+              {
+                "fee": 0, //手续费
+                "feeCoin": "", //手续费币种
+                "orderId": 0, //订单id
+                "price": 0, //成交价格
+                "quantity": 0, //成交数量
+                "symbol": "", //交易对
+                "timestamp": 0 //时间
+              }
+            ],
+            "page": 0,
+            "ps": 0,
+            "total": 0
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

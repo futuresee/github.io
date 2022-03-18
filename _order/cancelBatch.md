@@ -11,7 +11,16 @@ parameters:
     description: 交易对（不传时撤销所有交易对订单）
     ranges:
 right_code_blocks:
-  - code_block: "\t\"error\": {\n\t  \"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [],\n\t\"returnCode\": 0\n}"
+  - code_block: |-
+      {
+        "error": {
+          "code": "",
+          "msg": ""
+        },
+        "msgInfo": "",
+        "result": true,
+        "returnCode": 0
+      }
     title: Response
     language: json
 ---

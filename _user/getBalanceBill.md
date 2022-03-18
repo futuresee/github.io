@@ -13,35 +13,35 @@ parameters:
         ranges:
     -
         name: direction
-        type:
-        mandatory: true
+        type: string
+        mandatory: false
         default: NEXT
         description: "方向（PREV:上一页；NEXT:下一页）\t"
         ranges: PREV;NEXT
     -
         name: id
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: id
         ranges:
     -
         name: limit
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: 10
         description: "条数\t"
         ranges:
     -
         name: startTime
-        type:
+        type: integer
         mandatory: false
         default:
         description: 起始时间
         ranges:
     -
         name: endTime
-        type:
+        type: integer
         mandatory: false
         default:
         description: 结束时间
@@ -52,8 +52,31 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"hasNext\": false,\n\t\t\"hasPrev\": false,\n\t\t\"items\": [\n\t\t\t{\n\t\t\t\t\"afterAmount\": 0,\n\t\t\t\t\"amount\": 0,\n\t\t\t\t\"coin\": \"\",\n\t\t\t\t\"createdTime\": 0,\n\t\t\t\t\"id\": 0,\n\t\t\t\t\"side\": \"\",\n\t\t\t\t\"symbol\": \"\",\n\t\t\t\t\"type\": \"\"\n\t\t\t}\n\t\t]\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "hasNext": false, //是否有下一页
+            "hasPrev": false, //是否有上一页
+            "items": [ //数据列表
+              {
+                "afterAmount": 0, //变动后余额
+                "amount": 0, //数量
+                "coin": "", //币种
+                "createdTime": 0, //时间
+                "id": 0, //id
+                "side": "", //ADD:划入;SUB:转出
+                "symbol": "", //交易对
+                "type": "" //EXCHANGE:划转;CLOSE_POSITION:平仓盈亏;TAKE_OVER:仓位接管;QIANG_PING_MANAGER:强平管理费（手续费）;FUND:资金费用;FEE:手续费 (开仓、平仓、强平);ADL:自动减仓;TAKE_OVER:仓位接管MERGE:仓位合并
+              }
+            ]
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

@@ -6,7 +6,7 @@ description: /v1/entrust/profit-detail
 parameters:
     -
         name: profitId
-        type: string
+        type: integer
         mandatory: true
         default: N/A
         description: 止盈止损id
@@ -17,8 +17,29 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"createdTime\": 0,\n\t\t\"entryPrice\": 0,\n\t\t\"executedQty\": 0,\n\t\t\"isolatedMargin\": 0,\n\t\t\"origQty\": 0,\n\t\t\"positionSide\": \"\",\n\t\t\"positionSize\": 0,\n\t\t\"profitId\": 0,\n\t\t\"state\": \"\",\n\t\t\"symbol\": \"\",\n\t\t\"triggerProfitPrice\": 0,\n\t\t\"triggerStopPrice\": 0\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "createdTime": 0, //时间
+            "entryPrice": 0, //开仓均价
+            "executedQty": 0, //实际成交
+            "isolatedMargin": 0, //逐仓保证金
+            "origQty": 0, //数量（张）
+            "positionSide": "", //仓位方向
+            "positionSize": 0, //持仓数量（张）
+            "profitId": 0, //委托id
+            "state": "", //订单状态 NOT_TRIGGERED：新建委托（未触发）；TRIGGERING：触发中；TRIGGERED：已触发；USER_REVOCATION：用户撤销；PLATFORM_REVOCATION：平台撤销（拒绝）；EXPIRED：已过期
+            "symbol": "", //交易对
+            "triggerProfitPrice": 0, //止盈价格
+            "triggerStopPrice": 0 //止损价格
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

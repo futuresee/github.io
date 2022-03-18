@@ -46,15 +46,22 @@ parameters:
         default:
         description: 仓位方向：LONG;SHORT
         ranges: LONG;SHORT
-content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {},\n\t\"returnCode\": 0\n}"
+    - code_block: |-
+        {
+            "error": {
+            "code": "",
+            "msg": ""
+            },
+            "msgInfo": "",
+            "result": {},
+            "returnCode": 0
+        }
         title: Response
         language: json
 ---

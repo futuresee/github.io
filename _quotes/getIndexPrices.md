@@ -11,8 +11,22 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": [\n\t\t{\n\t\t\t\"p\": 0,\n\t\t\t\"s\": \"\",\n\t\t\t\"t\": 0\n\t\t}\n\t],\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": [
+            {
+              "p": 0, //价格
+              "s": "", //交易对
+              "t": 0 //时间
+            }
+          ],
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

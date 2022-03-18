@@ -1,7 +1,7 @@
 ---
 title: 开通合约
 position_number: 2
-type: get
+type: post
 description: /v1/account/open
 left_code_blocks:
     -
@@ -9,8 +9,16 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": true,\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": true,
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

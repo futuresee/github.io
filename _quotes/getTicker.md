@@ -7,7 +7,7 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
         description: 交易对
         ranges:
@@ -18,8 +18,26 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    -
-        code_block: "{\n\t\"error\": {\n\t\t\"code\": \"\",\n\t\t\"msg\": \"\"\n\t},\n\t\"msgInfo\": \"\",\n\t\"result\": {\n\t\t\"a\": \"\",\n\t\t\"c\": \"\",\n\t\t\"h\": \"\",\n\t\t\"l\": \"\",\n\t\t\"o\": \"\",\n\t\t\"r\": \"\",\n\t\t\"s\": \"\",\n\t\t\"t\": 0,\n\t\t\"v\": \"\"\n\t},\n\t\"returnCode\": 0\n}"
-        title: Response
-        language: json
+    - code_block: |-
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "a": "", //24小时成交量
+            "c": "", //最新价
+            "h": "", //24小时最高价
+            "l": "", //24小时最低价
+            "o": "", //24小时前第一笔成交价
+            "r": "", //24小时涨跌幅
+            "s": "", //交易对
+            "t": 0, //时间
+            "v": "" //24小时成交额
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---
