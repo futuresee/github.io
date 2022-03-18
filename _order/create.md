@@ -87,7 +87,7 @@ left_code_blocks:
         title: Java
         language: java
 right_code_blocks:
-    - code_block: |-
+  - code_block: |-
       {
         "error": {
           "code": "",
