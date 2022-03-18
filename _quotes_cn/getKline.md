@@ -47,26 +47,26 @@ left_code_blocks:
         language: java
 right_code_blocks:
     - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": [
-          {
-            "a": 0, //成交量
-            "c": 0, //结束价
-            "h": 0, //最高价
-            "l": 0, //最低价
-            "o": 0, //开始价
-            "s": "", //交易对
-            "t": 0, //时间
-            "v": 0 //成交额
-          }
-        ],
-        "returnCode": 0
-      }
-    title: Response
-    language: json
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": [
+            {
+              "a": 0, //成交量
+              "c": 0, //结束价
+              "h": 0, //最高价
+              "l": 0, //最低价
+              "o": 0, //开始价
+              "s": "", //交易对
+              "t": 0, //时间
+              "v": 0 //成交额
+            }
+          ],
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

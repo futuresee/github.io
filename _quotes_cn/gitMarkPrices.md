@@ -19,21 +19,21 @@ left_code_blocks:
         language: java
 right_code_blocks:
     - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": [
-          {
-            "p": 0, //价格
-            "s": "", //交易对
-            "t": 0 //时间
-          }
-        ],
-        "returnCode": 0
-      }
-    title: Response
-    language: json
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": [
+            {
+              "p": 0, //价格
+              "s": "", //交易对
+              "t": 0 //时间
+            }
+          ],
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

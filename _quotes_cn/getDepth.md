@@ -26,21 +26,21 @@ left_code_blocks:
         language: java
 right_code_blocks:
     - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": {
-          "a": [], //卖单
-          "b": [], //买单
-          "s": "", //交易对
-          "t": 0, //时间
-          "u": 0 //updateId
-        },
-        "returnCode": 0
-      }
-    title: Response
-    language: json
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "a": [], //卖单
+            "b": [], //买单
+            "s": "", //交易对
+            "t": 0, //时间
+            "u": 0 //updateId
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

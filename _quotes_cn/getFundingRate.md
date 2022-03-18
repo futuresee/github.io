@@ -19,27 +19,27 @@ left_code_blocks:
         language: java
 right_code_blocks:
     - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": {
-          "hasNext": false, //是否有下一页
-          "hasPrev": false, //是否有上一页
-          "items": [ //数据列表
-            {
-              "collectionInternal": 0, //收取时间间隔（秒）
-              "createdTime": 0, //时间
-              "fundingRate": 0, //最新资金费率
-              "id": 0, //id
-              "symbol": "" //交易对
-            }
-          ]
-        },
-        "returnCode": 0
-      }
-    title: Response
-    language: json
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": {
+            "hasNext": false, //是否有下一页
+            "hasPrev": false, //是否有上一页
+            "items": [ //数据列表
+              {
+                "collectionInternal": 0, //收取时间间隔（秒）
+                "createdTime": 0, //时间
+                "fundingRate": 0, //最新资金费率
+                "id": 0, //id
+                "symbol": "" //交易对
+              }
+            ]
+          },
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---

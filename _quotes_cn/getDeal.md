@@ -26,23 +26,23 @@ left_code_blocks:
         language: java
 right_code_blocks:
     - code_block: |-
-      {
-        "error": {
-          "code": "",
-          "msg": ""
-        },
-        "msgInfo": "",
-        "result": [
-          {
-            "a": 0, //成交量
-            "m": "", //买卖方向
-            "p": 0, //成交价
-            "s": "", //交易对
-            "t": 0 //成交时间
-          }
-        ],
-        "returnCode": 0
-      }
-    title: Response
-    language: json
+        {
+          "error": {
+            "code": "",
+            "msg": ""
+          },
+          "msgInfo": "",
+          "result": [
+            {
+              "a": 0, //成交量
+              "m": "", //买卖方向
+              "p": 0, //成交价
+              "s": "", //交易对
+              "t": 0 //成交时间
+            }
+          ],
+          "returnCode": 0
+        }
+      title: Response
+      language: json
 ---
