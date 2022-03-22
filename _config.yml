@@ -29,33 +29,33 @@ collections:
   user:
     title: User
     position_number: 5
-  # market_websocket:
-  #   title: MARKET WEBSOCKET
-  #   position_number: 6
-  # user_websocket:
-  #   title: USER WEBSOCKET
-  #   position_number: 7
-  # documentation_cn:
-  #   title: 接入说明
-  #   position_number: 6
-  # quotes_cn:
-  #   title: 行情数据
-  #   position_number: 7
-  # order_cn:
-  #   title: 限价委托和市价委托
-  #   position_number: 8
-  # entrust_cn:
-  #   title: 计划委托与止盈止损
-  #   position_number: 9
-  # user_cn:
-  #   title: 用户相关
-  #   position_number: 10
-  # market_websocket_cn:
-  #   title: 行情WEBSOCKET
-  #   position_number: 13
-  # user_websocket_cn:
-  #   title: 用户WEBSOCKET
-  #   position_number: 14
+  market_websocket:
+    title: WEBSOCKET
+    position_number: 6
+  user_websocket:
+    title: WEBSOCKET
+    position_number: 7
+  documentation_cn:
+    title: 接入说明
+    position_number: 8
+  quotes_cn:
+    title: 行情数据
+    position_number: 9
+  order_cn:
+    title: 限价委托和市价委托
+    position_number: 10
+  entrust_cn:
+    title: 计划委托与止盈止损
+    position_number: 11
+  user_cn:
+    title: 用户相关
+    position_number: 12
+  market_websocket_cn:
+    title: 行情WEBSOCKET
+    position_number: 13
+  user_websocket_cn:
+    title: 行情WEBSOCKET
+    position_number: 14
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -101,16 +101,11 @@ defaults:
       type: "user"
     values:
       _hide_content: true
-  # -
-  #   scope:
-  #     type: "market_websocket"
-  #   values:
-  #     _hide_content: true
-  # -
-  #   scope:
-  #     type: "user_websocket"
-  #   values:
-  #     _hide_content: true
+  -
+    scope:
+      type: "market_websocket_cn"
+    values:
+      _hide_content: true
   -
     scope:
       type: "documentation_cn"
@@ -136,16 +131,11 @@ defaults:
       type: "user_cn"
     values:
       _hide_content: true
-  # -
-  #   scope:
-  #     type: "market_websocket_cn"
-  #   values:
-  #     _hide_content: true
-  # -
-  #   scope:
-  #     type: "user_websocket_cn"
-  #   values:
-  #     _hide_content: true
+  -
+    scope:
+      type: "market_websocket_cn"
+    values:
+      _hide_content: true
 # -----------
 # CloudCannon
 
