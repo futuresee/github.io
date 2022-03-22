@@ -29,12 +29,12 @@ collections:
   user:
     title: User
     position_number: 5
-  market_websocket:
-    title: MARKET WEBSOCKET
-    position_number: 6
-  user_websocket:
-    title: USER WEBSOCKET
-    position_number: 7
+  # market_websocket:
+  #   title: MARKET WEBSOCKET
+  #   position_number: 6
+  # user_websocket:
+  #   title: USER WEBSOCKET
+  #   position_number: 7
   documentation_cn:
     title: 接入说明
     position_number: 8
@@ -53,9 +53,9 @@ collections:
   market_websocket_cn:
     title: 行情WEBSOCKET
     position_number: 13
-  user_websocket_cn:
-    title: 用户WEBSOCKET
-    position_number: 14
+  # user_websocket_cn:
+  #   title: 用户WEBSOCKET
+  #   position_number: 14
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
