@@ -50,9 +50,9 @@ collections:
   user_cn:
     title: 用户相关
     position_number: 12
-  market_websocket_cn:
-    title: 行情WEBSOCKET
-    position_number: 13
+  # market_websocket_cn:
+  #   title: 行情WEBSOCKET
+  #   position_number: 13
   # user_websocket_cn:
   #   title: 用户WEBSOCKET
   #   position_number: 14
