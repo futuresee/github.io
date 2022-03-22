@@ -12,69 +12,110 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    订阅24小时行情 ticker：{"req":"sub_ticker","symbol":"btc_usdt,eth_usdt"} 
-
+    订阅24小时行情 ticker：
+    ```js
+    {
+     "req":"sub_ticker",
+     "symbol":"btc_usdt,eth_usdt"
+    }
+    ```
     ps: symbol 非必传，不传则订阅所有交易对
 
-    取消订阅24小时行情: {"req":"unsub_ticker"}
+    取消订阅24小时行情: 
+    ```js
+    {
+     "req":"unsub_ticker"
+    }
+    ```
 
 
-
-    K线订阅:   
-
-    {"req":"sub_kline","symbol":"btc_usdt","type":"1m"}
+    K线订阅:
+    ```js
+    {
+     "req":"sub_kline",
+     "symbol":"btc_usdt","type":"1m"
+    }
+    ```
 
     ps:K线订阅type类型:  1m 5m 15m 30m 1h 4h 1d  1w 
 
     K线取消订阅:
+    ```js
+    {
+     "req":"unsub_kline"
+    }
+    ```
 
-    {"req":"unsub_kline"}
 
 
-
-    订阅24小时聚合行情 aggTicker：{"req":"sub_agg_ticker","symbol":"btc_usdt,eth_usdt"} 
+    订阅24小时聚合行情 aggTicker：
+    ```js
+    {
+     "req":"sub_agg_ticker",
+     "symbol":"btc_usdt,eth_usdt"
+    }
+    ```
 
     ps: symbol 非必传，不传则订阅所有交易对
 
     取消24小时聚合行情订阅:
-
-    {"req":"unsub_agg_ticker"}
+    ```js
+    {
+     "req":"unsub_agg_ticker"
+    }
+    ```
 
 
 
     指数价格订阅：
-
-    {"req":"sub_index_price","symbol":"btc_usdt,eth_usdt"}
+    ```js
+    {
+     "req":"sub_index_price",
+     "symbol":"btc_usdt,eth_usdt"
+    }
+    ```
 
     ps: symbol 非必传，不传则订阅所有交易对
 
     取消指数价格订阅：
-
-    {"req":"unsub_index_price"}
-
-
+    ```js
+    {
+     "req":"unsub_index_price"
+    }
+    ```
 
     标记价格订阅：
-
-    {"req":"sub_mark_price","symbol":"btc_usdt,eth_usdt"}
-
+    ```js
+    {
+     "req":"sub_mark_price",
+     "symbol":"btc_usdt,eth_usdt"
+    }
+    ```
     ps: symbol 非必传，不传则订阅所有交易对
 
     取消标记价格订阅：
-
-    {"req":"unsub_mark_price"}
-
-
+    ```js
+    {
+     "req":"unsub_mark_price"
+    }
+    ```
 
     订阅交易对：
-
-     {"req":"sub_symbol","symbol":"btc_usdt"}
+    ```js
+     {
+      "req":"sub_symbol",
+      "symbol":"btc_usdt"
+     }
+    ```
 
     ps:订阅交易对之后，会推送这个交易对的index.price、mark.price、ticker、agg.ticker、deal、deep、deep.full、fund.rate的消息
 
     取消交易对订阅:
-
-    {"req":"unsub_symbol"}
+    ```js
+    {
+     "req":"unsub_symbol"
+    }
+    ```
 
 
 
