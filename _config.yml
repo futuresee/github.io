@@ -101,16 +101,16 @@ defaults:
       type: "user"
     values:
       _hide_content: true
-  -
-    scope:
-      type: "market_websocket"
-    values:
-      _hide_content: true
-  -
-    scope:
-      type: "user_websocket"
-    values:
-      _hide_content: true
+  # -
+  #   scope:
+  #     type: "market_websocket"
+  #   values:
+  #     _hide_content: true
+  # -
+  #   scope:
+  #     type: "user_websocket"
+  #   values:
+  #     _hide_content: true
   -
     scope:
       type: "documentation_cn"
@@ -136,16 +136,16 @@ defaults:
       type: "user_cn"
     values:
       _hide_content: true
-  -
-    scope:
-      type: "market_websocket_cn"
-    values:
-      _hide_content: true
-  -
-    scope:
-      type: "user_websocket_cn"
-    values:
-      _hide_content: true
+  # -
+  #   scope:
+  #     type: "market_websocket_cn"
+  #   values:
+  #     _hide_content: true
+  # -
+  #   scope:
+  #     type: "user_websocket_cn"
+  #   values:
+  #     _hide_content: true
 # -----------
 # CloudCannon
 
