@@ -33,7 +33,7 @@ collections:
     title: WEBSOCKET
     position_number: 6
   user_websocket:
-    title: WEBSOCKET
+    title: USER WEBSOCKET
     position_number: 7
   documentation_cn:
     title: 接入说明
@@ -54,7 +54,7 @@ collections:
     title: 行情WEBSOCKET
     position_number: 13
   user_websocket_cn:
-    title: 行情WEBSOCKET
+    title: 用户WEBSOCKET
     position_number: 14
 plugins:
   - jekyll-sitemap
@@ -103,7 +103,12 @@ defaults:
       _hide_content: true
   -
     scope:
-      type: "market_websocket_cn"
+      type: "market_websocket"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "user_websocket"
     values:
       _hide_content: true
   -
@@ -134,6 +139,11 @@ defaults:
   -
     scope:
       type: "market_websocket_cn"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "user_websocket_cn"
     values:
       _hide_content: true
 # -----------
