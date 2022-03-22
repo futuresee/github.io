@@ -27,7 +27,7 @@ content_markdown: |-
      ```
 
 
-     仓位变革
+     仓位变更
      ```js
       {"channel":"user.position",
        "data":{
