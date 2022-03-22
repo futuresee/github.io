@@ -13,42 +13,51 @@ parameters:
         ranges:
 content_markdown: |-
     指数价格inde.price： 
-
-    {"channel":"push.index.price",
+    ```js
+    {
+     "channel":"push.index.price",
      "data":{
        "s":"btc_usdt", //交易对
        "p":"50000",    //价格
        "t":123124124   //时间戳
-
-      }}
+      }
+    }
+    ```
 
     标记价格:
-
-     {"channel":"push.mark.price",
+     ```js
+     {
+      "channel":"push.mark.price",
       "data":{
          "s":"btc_usdt", //交易对
          "p":"50000",    //价格
          "t":123124124   //时间戳
-
-    }}
+      }
+     }
+     ```
 
 
 
     成交:
-    {"channel":"push.deal",
+    ```js
+    {
+     "channel":"push.deal",
      "data":{
         "s":"btc_index", //交易对
         "p":"50000",    //价格
         "a":"0.1"   //数量
         "m": "BID"   //成交方向  BID 买 ASK卖
         "t":123124124   //时间戳
-     }}
+     }
+    }
+    ```
 
 
 
     深度变更:
-
-    {"channel":"push.deep",
+    ```js
+    {
+     "channel":"push.deep",
      "data":{
          "id":1 ,  //update Id
          "s":"btc_index", //交易对
@@ -56,26 +65,30 @@ content_markdown: |-
          "p":"50000",    //价格
          "q":"0.1" , //数量
          "t":123124124   //时间戳
-
-    }}
+     }
+    }
+    ```
 
 
 
     资金费率:
-
-     {"channel":"push.fund.rate",
+     ```js
+     {
+      "channel":"push.fund.rate",
       "data":{
          "s":"btc_usdt", //交易对
          "r":"0.01",    // 资金费率
          "t":123124124   //时间戳
-
-    }}
+      }
+    }
+    ```
 
 
 
     24小时行情ticker:
-
-    {"channel":"push.ticker",
+    ```js
+    {
+     "channel":"push.ticker",
      "data":{
          "s":"btc_index", //交易对
          "o":"49000",     // open 开盘价
@@ -93,14 +106,16 @@ content_markdown: |-
          "bp":"0.21",   //bid price 买一价格
 
          "ap":"0.21" ,  //ask price 卖一价格
-
-    }}
+     }
+    }
+    ```
 
 
 
     24小时聚合行情agg.ticker:
-
-    {"channel":"push.agg.ticker",
+    ```js
+    {
+     "channel":"push.agg.ticker",
      "data":{
          "s":"btc_index", //交易对
          "o":"49000", // open 开盘价
@@ -110,14 +125,16 @@ content_markdown: |-
          "a":"0.1", //amount 成交量
          "v":"0.1", //volume 成交额
          "ch":"0.21"   //change 涨跌幅
-
-    }}
+     }
+    }
+    ```
 
 
 
     K线
-
-    {"channel":"push.kline",
+    ```js
+    {
+     "channel":"push.kline",
      "data":{
          "s":"btc_index", //交易对
          "o":"49000", // open 开盘价
@@ -128,19 +145,23 @@ content_markdown: |-
          "v":"0.1", //volume 成交额
          "ch":"0.21",   //change 涨跌幅
          "t":123124124   //时间戳
-
-    }}
+     }
+    }
+    ```
 
 
 
     全量前50挡深度
-    {"channel":"push.deep.full",
+    ```js
+    {
+     "channel":"push.deep.full",
       "data":{
           "s":"btc_index", //交易对
           "a":[["50000","0.1"],["50001","0.2"]],    //ask 卖单队列， [价格，数量]
           "b":[["49999","0.1"],["48888","0.2"]]   //bid 买单队列
-
-    }}
+     }
+    }
+    ```
 
 left_code_blocks:
 -
