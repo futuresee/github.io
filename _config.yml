@@ -97,7 +97,7 @@ defaults:
       _hide_content: true
   -
     scope:
-      type: "websocket"
+      type: "market_websocket_cn"
     values:
       _hide_content: true
   -
@@ -125,7 +125,6 @@ defaults:
       type: "user_cn"
     values:
       _hide_content: true
-  -
   -
     scope:
       type: "market_websocket_cn"
