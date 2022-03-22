@@ -118,7 +118,6 @@ content_markdown: |-
     ```
 
 
-
     sub_mark_price、sub_index_price、sub_agg_ticker、sub_ticker批量订阅每3秒推送一次
 
 left_code_blocks:
