@@ -37,9 +37,9 @@ parameters:
       NEW：新建订单（未成交）；PARTIALLY_FILLED：部分成交；FILLED：全部成交；CANCELED：用户撤销；REJECTED：下单失败；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史）
     ranges:
   - name: symbol
-    type:
+    type: string
     mandatory: false
-    default:
+    default: N/A
     description: 交易对
     ranges:
 left_code_blocks:

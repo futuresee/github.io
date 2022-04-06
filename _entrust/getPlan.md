@@ -41,9 +41,9 @@ parameters:
         ranges:
     -
         name: state
-        type:
+        type: string
         mandatory: true
-        default:
+        default: N/A
         description: >-
             委托状态
             NOT_TRIGGERED：新建委托（未触发）；TRIGGERING：触发中；TRIGGERED：已触发；USER_REVOCATION：用户撤销；PLATFORM_REVOCATION：平台撤销（拒绝）；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史）

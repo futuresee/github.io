@@ -13,30 +13,30 @@ parameters:
         ranges:
     -
         name: interval
-        type:
+        type: string
         mandatory: true
         default:
         description: 时间间隔
         ranges: 1m;5m;15m;30m;1h;4h;1d;1w
     -
         name: startTime
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: 起始时间
         ranges:
     -
         name: endTime
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: 结束时间
         ranges:
     -
         name: limit
-        type:
+        type: integer
         mandatory: false
-        default:
+        default: N/A
         description: 限制条数
         ranges:
 content_markdown: 注：**此方法不需要签名**

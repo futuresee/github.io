@@ -13,35 +13,35 @@ parameters:
         ranges:
     -
         name: origQty
-        type:
+        type: integer
         mandatory: true
         default:
         description: 数量（张）
         ranges:
     -
         name: triggerProfitPrice
-        type:
+        type: integer
         mandatory: true
         default:
         description: 止盈触发价
         ranges:
     -
         name: triggerStopPrice
-        type:
+        type: integer
         mandatory: true
         default:
         description: 止损触发价
         ranges:
     -
         name: expireTime
-        type:
+        type: integer
         mandatory: true
         default:
         description: 过期时间
         ranges:
     -
         name: positionSide
-        type:
+        type: string
         mandatory: true
         default:
         description: 仓位方向：LONG;SHORT
