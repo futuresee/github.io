@@ -52,7 +52,7 @@ title: API Docs
 				{{ doc.content_markdown | markdownify | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
 
 				{% if doc.examples and doc.examples[0].name %}
-					<table>
+					<table style="word-break: break-all;">
 							<thead>
 									<tr>
 											<th>Name</th>
@@ -114,7 +114,7 @@ title: API Docs
 
 			{% if doc.parameters and doc.parameters[0].name %}
 			<h6>Parameters</h6>
-			<table style="word-break: break-all;">
+			<table>
 				<thead>
 				<tr>
 					<th>参数</th>
