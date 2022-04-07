@@ -51,6 +51,29 @@ title: API Docs
 
 				{{ doc.content_markdown | markdownify | replace: "<dl>", "<h6>Parameters</h6><dl>" }}
 
+				{% if doc.examples and doc.examples[0].name %}
+					<table>
+							<thead>
+									<tr>
+											<th>Name</th>
+											<th>Mandatory</th>
+											<th>Example</th>
+											<th>Description</th>
+									</tr>
+							</thead>
+							<tbody>
+									{% for example in doc.examples %}
+									<tr>
+										<td>{{ parameter.name }}</td>
+										<td>{{ parameter.mandatory }}</td>
+										<td>{{ parameter.example }}</td>
+										<td>{{ parameter.description }}</td>
+									</tr>
+									{% endfor %}
+							</tbody>
+					</table>
+				{% endif %}
+
 				<!-- {% if doc.left_code_blocks and doc.left_code_blocks[0].code_block %}
 						{% for block in doc.left_code_blocks %}
 								{% include syntax-highlight.html block=block %}
