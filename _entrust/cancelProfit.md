@@ -2,7 +2,7 @@
 title: 撤销止盈止损
 position_number: 8
 type: post
-description: /v1/entrust/cancel-profit-stop
+description: /future/trade/v1/entrust/cancel-profit-stop
 parameters:
     -
         name: profitId
@@ -13,7 +13,7 @@ parameters:
         ranges:
 left_code_blocks:
     -
-        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
