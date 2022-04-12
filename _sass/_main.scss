@@ -18,10 +18,6 @@ img {
 	max-width: 100%;
 }
 
-p {
-	word-break: break-all;
-}
-
 @media (max-width: $mobile-break) {
 	.sidebar, header > form {
 		display: none;
@@ -591,4 +587,8 @@ header {
 	border: 1px solid #F0B90B;
 	color: #f0b90b;
 	cursor: pointer;
+}
+
+p {
+	word-break: break-all;
 }

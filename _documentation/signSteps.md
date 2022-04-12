@@ -9,7 +9,7 @@ content_markdown: >-
     http://api-thanos-test.xtthanos.com/future/api/v1/public/symbol/detail?symbol=btc_usdt的示例
     
     
-    以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例 appkey、secret仅供示范
+    以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例 appkey、secret仅供示范：
     
     
     appKey: 3976eb88-76d0-4f6e-a6b2-a57980770085
@@ -18,7 +18,8 @@ content_markdown: >-
     secretKey: bc6630d0231fda5cd98794f52c4998659beda290
     
 
-    Header部分数据
+
+    Header部分数据：
     
     
     xt-validate-appkey: 3976eb88-76d0-4f6e-a6b2-a57980770085
@@ -33,6 +34,7 @@ content_markdown: >-
     Authorization: bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNjYyMTA1ODcyNyIsInNjb3BlIjoiYXV0aCIsImlzcyI6Inh0LmNvbSIsImxhc3RBdXRoVGltZSI6MTY0NDgwNjEyNjE0OSwidXNlck5hbWUiOiIxNjYyMTA1ODcyNyIsImV4cCI6MTY0NDg5MjUyNiwidXNlcklkIjoxMzEwNzN9.vi2Cvc1BlYOKTdR6OrK1d89K9Je6DVLkJXSd2QEN7c6N11AmeIymhoLccqz6vflkC-c7eoFswutonGom375pxVX3gjnYomMi5-IbxpTL0Bys2tQ2xI7rhrbMIADBXL0G2CpCYLyZdapn3RxNScgQyJhI5ulupdXTx7tspeYDHfA
 
 
+
     请求数据：
 
 
@@ -44,6 +46,7 @@ content_markdown: >-
       price: '39000',
       quantity: '2'
     }
+
 
 
     1、数据部分
@@ -111,8 +114,12 @@ content_markdown: >-
 
                 query有数据，body有数据：Y=#path#query#body
 
+
+
       2、请求头部分
             X=”xt-validate-appkey=3976eb88-76d0-4f6e-a6b2-a57980770085&xt-validate-timestamp=1641446237201”
+
+
 
       3、生成签名
       
