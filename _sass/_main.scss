@@ -18,6 +18,10 @@ img {
 	max-width: 100%;
 }
 
+p {
+	word-break: break-all;
+}
+
 @media (max-width: $mobile-break) {
 	.sidebar, header > form {
 		display: none;
