@@ -2,7 +2,7 @@
 title: 获取交易对的k线信息
 position_number: 14
 type: get
-description: /v1/public/q/kline
+description: /future/market/v1/public/q/kline
 parameters:
     -
         name: symbol
