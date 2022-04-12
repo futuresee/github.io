@@ -4,7 +4,7 @@ position_number: 5
 parameters:
 - name:
 content:
-content_markdown: >-
+content_markdown: |-
 
     http://fapi.xt.com/api/v1/public/symbol/detail?symbol=btc_usdt的示例
     
@@ -12,10 +12,10 @@ content_markdown: >-
     以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例 appkey、secret仅供示范：
     
     
-    appKey: 3976eb88-76d0-4f6e-a6b2-a57980770085
+    | appKey |: | 3976eb88-76d0-4f6e-a6b2-a57980770085 |
     
 
-    secretKey: bc6630d0231fda5cd98794f52c4998659beda290
+    | secretKey |: |bc6630d0231fda5cd98794f52c4998659beda290|
     
 
 
