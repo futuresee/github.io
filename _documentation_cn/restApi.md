@@ -8,7 +8,7 @@ parameters:
 content_markdown: |-
     正式:
 
-    **https://api.xt.com**
+    **https://fapi.xt.com**
     {: .info}
 
 left_code_blocks:
