@@ -2,7 +2,7 @@
 title: 根据id查询订单
 position_number: 3
 type: get
-description: /v1/order/detail
+description: /future/trade/v1/order/detail
 parameters:
   - name: orderId
     type: integer
@@ -11,7 +11,7 @@ parameters:
     description: 订单id
     ranges:
 left_code_blocks:
-  - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+  - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
     title: Java
     language: java
 right_code_blocks:

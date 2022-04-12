@@ -2,7 +2,7 @@
 title: 获取资金费用
 position_number: 6
 type: get
-description: /v1/balance/funding-rate-list
+description: /future/user/v1/balance/funding-rate-list
 parameters:
     -
         name: symbol
@@ -48,7 +48,7 @@ parameters:
         ranges:
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:

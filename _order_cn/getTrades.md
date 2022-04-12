@@ -2,7 +2,7 @@
 title: 查询成交明细
 position_number: 1.1
 type: get
-description: /v1/order/trade-list
+description: /future/trade/v1/order/trade-list
 parameters:
     -
         name: orderId
@@ -27,7 +27,7 @@ parameters:
         ranges:
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:

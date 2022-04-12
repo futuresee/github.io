@@ -2,7 +2,7 @@
 title: 撤销订单
 position_number: 5
 type: post
-description: /v1/order/cancel
+description: /future/trade/v1/order/cancel
 parameters:
   - name: orderId
     type: Integer

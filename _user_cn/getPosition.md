@@ -2,7 +2,7 @@
 title: 获取持仓信息
 position_number: 7
 type: post
-description: /v1/position/list
+description: /future/user/v1/position/list
 parameters:
     -
         name: symbol
@@ -13,7 +13,7 @@ parameters:
         ranges:
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:

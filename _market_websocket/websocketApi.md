@@ -14,11 +14,11 @@ parameters:
 content_markdown: |-
     正式:
 
-    wss://xtsocket.xt.com/websocket
+    wss://fstream.xt.com
     
-    行情ws订阅地址:  https://xxx.xxx.xxx/ws/market
+    行情ws订阅地址:  https://fstream.xt.com/ws/market
     
-    用户ws订阅地址:  https://xxx.xxx.xxx/ws/user
+    用户ws订阅地址:  https://fstream.xt.com/ws/user
     
      客户端订阅行情的时候，创建俩个链接，一个链接只订阅交易对信息和K线信息
      

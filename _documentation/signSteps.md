@@ -4,7 +4,7 @@ position_number: 5
 parameters:
 - name:
 content:
-content_markdown: |-
+content_markdown: >-
 
     http://fapi.xt.com/api/v1/public/symbol/detail?symbol=btc_usdt的示例
     
@@ -12,10 +12,10 @@ content_markdown: |-
     以下是在linux bash环境下使用 echo openssl 和curl工具实现的一个调用接口下单的示例 appkey、secret仅供示范：
     
     
-    | appKey |: | 3976eb88-76d0-4f6e-a6b2-a57980770085 |
+    appKey: 3976eb88-76d0-4f6e-a6b2-a57980770085
     
 
-    | secretKey |: |bc6630d0231fda5cd98794f52c4998659beda290|
+    secretKey: bc6630d0231fda5cd98794f52c4998659beda290
     
 
 
@@ -25,13 +25,10 @@ content_markdown: |-
     xt-validate-appkey: 3976eb88-76d0-4f6e-a6b2-a57980770085
 
 
-    xt-validate-timestamp: 2b5eb11e18796d12d88f13dc27dbbd02c2cc51ff7059765ed9821957d82bb4d9
+    xt-validate-timestamp: 1641446237201
     
     
     xt-validate-algorithms: HmacSHA256
-    
-    
-    Authorization: bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxNjYyMTA1ODcyNyIsInNjb3BlIjoiYXV0aCIsImlzcyI6Inh0LmNvbSIsImxhc3RBdXRoVGltZSI6MTY0NDgwNjEyNjE0OSwidXNlck5hbWUiOiIxNjYyMTA1ODcyNyIsImV4cCI6MTY0NDg5MjUyNiwidXNlcklkIjoxMzEwNzN9.vi2Cvc1BlYOKTdR6OrK1d89K9Je6DVLkJXSd2QEN7c6N11AmeIymhoLccqz6vflkC-c7eoFswutonGom375pxVX3gjnYomMi5-IbxpTL0Bys2tQ2xI7rhrbMIADBXL0G2CpCYLyZdapn3RxNScgQyJhI5ulupdXTx7tspeYDHfA
 
 
 
@@ -60,9 +57,9 @@ content_markdown: |-
 
       body:   Json: 直接按JSON字符串不做转换或排序操作。
 
-                  x-www-form-urlencoded: 按照key的字典序排序，将所有key=value进行拼接，示例:userName=dfdfdf&password=ggg　
+              x-www-form-urlencoded: 按照key的字典序排序，将所有key=value进行拼接，示例:userName=dfdfdf&password=ggg　
 
-                  form-data：此格式暂不支持。
+              form-data：此格式暂不支持。
 
       如果存在多种数据形式，则按照path、query、body的顺序进行再拼接，得到所有数据的拼接值。
 

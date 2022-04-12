@@ -2,7 +2,7 @@
 title: 收藏交易对
 position_number: 13
 type: post
-description: /v1/user/collection/add
+description: /future/user/v1/user/collection/add
 parameters:
     -
         name: symbol
@@ -13,7 +13,7 @@ parameters:
         ranges:
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:

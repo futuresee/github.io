@@ -2,7 +2,7 @@
 title: 撤销所有订单
 position_number: 6
 type: post
-description: /v1/order/cancel-all
+description: /future/trade/v1/order/cancel-all
 parameters:
   - name: symbol
     type: String
