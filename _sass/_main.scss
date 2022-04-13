@@ -589,16 +589,6 @@ header {
 	cursor: pointer;
 }
 
-p {
-	word-break: break-all;
-}
-
-.type-select {
-	position: absolute;
-	top: 0px;
-	left: 400px;
-}
-
 .trade-type-select {
 	position: absolute;
 	top: 0px;
@@ -620,3 +610,9 @@ p {
 		border-bottom: 1px solid #ffbe40;
 	}
 }
+
+p {
+	word-break: break-all;
+}
+
+
