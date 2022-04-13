@@ -599,7 +599,10 @@ p {
 	left: 400px;
 }
 
-.type-select {
+.trade-type-select {
+	position: absolute;
+	top: 0px;
+	left: 400px;
 	a {
 		display: inline-block;
 		height: 40px;
@@ -612,7 +615,7 @@ p {
 			text-decoration: none;
 		}
 	}
-	.active {
+	.active-type {
 		color: #ffbe40;
 		border-bottom: 1px solid #ffbe40;
 	}
