@@ -7,14 +7,21 @@ parameters:
     -
         name: orderId
         type: integer
-        mandatory: true
+        mandatory: false
         default: N/A
         description: 订单id
         ranges:
     -
+        name: symbol
+        type: string
+        mandatory: false
+        default: N/A
+        description: 交易对
+        ranges:
+    -
         name: page
         type: integer
-        mandatory: true
+        mandatory: false
         default: 1
         description: "页码\t"
         ranges:
@@ -24,6 +31,20 @@ parameters:
         mandatory: false
         default: 10
         description: "单页数\t"
+        ranges:
+    -
+        name: startTime
+        type: integer
+        mandatory: false
+        default: N/A
+        description: 起始时间
+        ranges:
+    -
+        name: endTime
+        type: integer
+        mandatory: false
+        default: N/A
+        description: 结束时间
         ranges:
 left_code_blocks:
     -
@@ -44,6 +65,7 @@ right_code_blocks:
                 "fee": 0, //手续费
                 "feeCoin": "", //手续费币种
                 "orderId": 0, //订单id
+                "execId": 0, //成交id
                 "price": 0, //成交价格
                 "quantity": 0, //成交数量
                 "symbol": "", //交易对

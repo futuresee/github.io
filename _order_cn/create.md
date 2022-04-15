@@ -5,6 +5,13 @@ type: post
 description: /future/trade/v1/order/create
 parameters:
     -
+        name: clientOrderId
+        type: string
+        mandatory: false
+        default: N/A
+        description: 自定义订单id
+        ranges:
+    -
         name: symbol
         type: string
         mandatory: false

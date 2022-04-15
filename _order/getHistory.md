@@ -63,6 +63,7 @@ right_code_blocks:
           "hasPrev": false, //是否有上一页
           "items": [ //数据列表
             {
+              "clientOrderId": "", //自定义订单id
               "avgPrice": 0, //成交均价
               "closePosition": false, //是否条件全平仓
               "closeProfit": 0, //平仓盈亏

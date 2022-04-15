@@ -4,6 +4,12 @@ position_number: 4
 type: get
 description: /future/trade/v1/order/list
 parameters:
+  - name: clientOrderId
+    type: String
+    mandatory: false
+    default: N/A
+    description: 自定义订单id
+    ranges:
   - name: page
     type: integer
     mandatory: false
@@ -57,6 +63,7 @@ right_code_blocks:
         "result": {
           "items": [
             {
+              "clientOrderId": "", //自定义订单id
               "avgPrice": 0, //成交均价
               "closePosition": false, //是否条件全平仓
               "closeProfit": 0, //平仓盈亏
