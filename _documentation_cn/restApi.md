@@ -9,6 +9,7 @@ content_markdown: |-
     正式:
 
     **U本位合约:https://fapi.xt.com**
+    {: .info}
 
 
     **币本位合约:https://dapi.xt.com**
