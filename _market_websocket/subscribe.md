@@ -117,6 +117,16 @@ content_markdown: |-
     }
     ```
 
+    订阅多交易对深度：
+    ```js
+    {
+     "req":"sub_depth",
+     "symbol":"btc_usdt,eth_usdt"
+    }
+    ```
+
+    ps:多交易对深度订阅，交易对以逗号隔开，最多订阅十个交易对深度，会推送所订阅的交易对的deep、deep.full的消息
+
 
 
     sub_mark_price、sub_index_price、sub_agg_ticker、sub_ticker批量订阅每3秒推送一次

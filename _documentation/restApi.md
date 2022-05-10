@@ -8,7 +8,10 @@ parameters:
 content_markdown: |-
     正式:
 
-    **https://fapi.xt.com**
+    **U本位合约:https://fapi.xt.com**
+
+
+    **币本位合约:https://dapi.xt.com**
     {: .info}
 
 left_code_blocks:
