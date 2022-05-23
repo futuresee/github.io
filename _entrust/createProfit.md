@@ -19,13 +19,6 @@ parameters:
         description: Quantity (Cont)
         ranges:
     -
-        name: triggerPriceType
-        type: string
-        mandatory: true
-        default: N/A
-        description: Trigger price type:INDEX_PRICE(Index price)；MARK_PRICE(Mark price)；LATEST_PRICE(latest price)
-        ranges: INDEX_PRICE;MARK_PRICE;LATEST_PRICE
-    -
         name: triggerProfitPrice
         type: integer
         mandatory: true
