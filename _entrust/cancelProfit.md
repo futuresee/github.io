@@ -1,5 +1,5 @@
 ---
-title: 撤销止盈止损
+title: Cancel Stop Limit
 position_number: 8
 type: post
 description: /future/trade/v1/entrust/cancel-profit-stop
@@ -9,7 +9,7 @@ parameters:
         type: integer
         mandatory: true
         default: N/A
-        description: 止盈止损id
+        description: Stop limit ID
         ranges:
 left_code_blocks:
     -

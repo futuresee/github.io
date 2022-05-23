@@ -6,13 +6,13 @@ parameters:
         name:
         content:
 content_markdown: |-
-    正式:
+    Official:
 
-    **U本位合约:https://fapi.xt.com**
+    **USDT-M:https://fapi.xt.com**
     {: .info}
 
 
-    **币本位合约:https://dapi.xt.com**
+    **Coin-M:https://dapi.xt.com**
     {: .info}
 
 left_code_blocks:

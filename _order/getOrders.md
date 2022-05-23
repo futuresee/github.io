@@ -1,5 +1,5 @@
 ---
-title: 查询订单
+title: See Orders
 position_number: 4
 type: get
 description: /future/trade/v1/order/list
@@ -8,39 +8,39 @@ parameters:
     type: String
     mandatory: false
     default: N/A
-    description: 自定义订单id
+    description: Client order ID
     ranges:
   - name: page
     type: integer
     mandatory: false
     default: 1
-    description: 页码
+    description: Page
     ranges:
   - name: size
     type: integer
     mandatory: false
     default: 10
-    description: 单页数
+    description: Quantity of a single page
     ranges:
   - name: startTime
     type: integer
     mandatory: false
     default: N/A
-    description: 开始时间
+    description: Start time
     ranges:
   - name: endTime
     type: integer
     mandatory: false
     default: N/A
-    description: 结束时间
+    description: End time
     ranges:
   - name: state
     type: string
     mandatory: true
     default: NEW
     description: >-
-      订单状态
-      NEW：新建订单（未成交）；PARTIALLY_FILLED：部分成交；FILLED：全部成交；CANCELED：用户撤销；REJECTED：下单失败；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史）
+      Order state:
+      NEW：New order (unfilled);PARTIALLY_FILLED:Partial deal;PARTIALLY_CANCELED:Partial revocation;FILLED:Filled;CANCELED:Cancled;REJECTED:Order failed;EXPIRED：Expired;UNFINISHED:Unfinished;HISTORY:(History)
     ranges:
   - name: symbol
     type: string

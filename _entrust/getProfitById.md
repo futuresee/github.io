@@ -1,5 +1,5 @@
 ---
-title: 根据profitId查询止盈止损
+title: See Stop Limit base on Profitld
 position_number: 11
 type: get
 description: /future/trade/v1/entrust/profit-detail
@@ -9,7 +9,7 @@ parameters:
         type: integer
         mandatory: true
         default: N/A
-        description: 止盈止损id
+        description: Stop limit ID
         ranges:
 left_code_blocks:
     -
@@ -25,18 +25,18 @@ right_code_blocks:
           },
           "msgInfo": "",
           "result": {
-            "createdTime": 0, //时间
-            "entryPrice": 0, //开仓均价
-            "executedQty": 0, //实际成交
-            "isolatedMargin": 0, //逐仓保证金
-            "origQty": 0, //数量（张）
-            "positionSide": "", //仓位方向
-            "positionSize": 0, //持仓数量（张）
-            "profitId": 0, //委托id
-            "state": "", //订单状态 NOT_TRIGGERED：新建委托（未触发）；TRIGGERING：触发中；TRIGGERED：已触发；USER_REVOCATION：用户撤销；PLATFORM_REVOCATION：平台撤销（拒绝）；EXPIRED：已过期
-            "symbol": "", //交易对
-            "triggerProfitPrice": 0, //止盈价格
-            "triggerStopPrice": 0 //止损价格
+            "createdTime": 0, //Time
+            "entryPrice": 0, //Open position average price
+            "executedQty": 0, //Actual transaction
+            "isolatedMargin": 0, //Isolated Margin
+            "origQty": 0, //Quantity (Cont)
+            "positionSide": "", //Position side
+            "positionSize": 0, //Position quantity (Cont)
+            "profitId": 0, //Order ID
+            "state": "", //Order state:NOT_TRIGGERED：New order (not triggered);TRIGGERING:Triggering;TRIGGERED:Triggered;USER_REVOCATION:User revocation;PLATFORM_REVOCATION:Platform revocation (rejection);EXPIRED:expired;
+            "symbol": "", //Trading pair
+            "triggerProfitPrice": 0, //Stop profit price
+            "triggerStopPrice": 0 //Stop loss price
           },
           "returnCode": 0
         }

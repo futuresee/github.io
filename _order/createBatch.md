@@ -1,5 +1,5 @@
 ---
-title: 批量下单
+title: Bulk Orders
 position_number: 2
 type: post
 description: /future/trade/v1/order/create-batch
@@ -8,7 +8,7 @@ parameters:
     type: string
     mandatory: true
     default: N/A
-    description: 下单数据的list集合
+    description: List collection of order data
     ranges:
 left_code_blocks:
   - code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/trade/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"

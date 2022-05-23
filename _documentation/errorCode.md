@@ -1,15 +1,15 @@
 ---
-title: 错误代码
+title: Error Code
 position_number: 9
 parameters:
 - name:
 content:
 content_markdown: |-
-    | 状态码 | 错误信息 |
+    | Status code | Error information |
     | --- | --- |
-    | 200 | 成功 |
-    | 401 | 需要登录 |
-    | 403 | 登录过期 |
+    | 200 | Success |
+    | 401 | Login required |
+    | 403 | Login expired |
 left_code_blocks:
 - code_block:
   title:

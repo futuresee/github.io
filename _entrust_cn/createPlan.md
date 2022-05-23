@@ -34,13 +34,6 @@ parameters:
         description: 数量（张）
         ranges:
     -
-        name: marketOrderLevel
-        type: integer
-        mandatory: true
-        default: N/A
-        description: 市价最优档：1：对手价；5，10，15挡
-        ranges: 1;5;10;15
-    -
         name: price
         type: number
         mandatory: false

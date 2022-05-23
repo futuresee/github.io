@@ -19,6 +19,13 @@ parameters:
         description: 数量（张）
         ranges:
     -
+        name: triggerPriceType
+        type: string
+        mandatory: true
+        default: N/A
+        description: 触发价格类型：INDEX_PRICE(指数价格)；MARK_PRICE(标记价格)；LATEST_PRICE(最新价格)
+        ranges: INDEX_PRICE;MARK_PRICE;LATEST_PRICE
+    -
         name: triggerProfitPrice
         type: integer
         mandatory: true

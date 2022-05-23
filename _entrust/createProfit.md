@@ -1,50 +1,57 @@
 ---
-title: 创建止盈止损
+title: Create Stop Limit
 position_number: 7
 type: post
-description: /future/trade/v1/entrust/create-plan
+description: /future/trade/v1/entrust/create-profit
 parameters:
     -
         name: symbol
         type: string
         mandatory: false
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
     -
         name: origQty
         type: integer
         mandatory: true
         default:
-        description: 数量（张）
+        description: Quantity (Cont)
         ranges:
+    -
+        name: triggerPriceType
+        type: string
+        mandatory: true
+        default: N/A
+        description: Trigger price type:INDEX_PRICE(Index price)；MARK_PRICE(Mark price)；LATEST_PRICE(latest price)
+        ranges: INDEX_PRICE;MARK_PRICE;LATEST_PRICE
     -
         name: triggerProfitPrice
         type: integer
         mandatory: true
         default:
-        description: 止盈触发价
+        description: TP trigger price
         ranges:
     -
         name: triggerStopPrice
         type: integer
         mandatory: true
         default:
-        description: 止损触发价
+        description: SL trigger price
         ranges:
     -
         name: expireTime
         type: integer
         mandatory: true
         default:
-        description: 过期时间
+        description: Expiration time
         ranges:
     -
         name: positionSide
         type: string
         mandatory: true
         default:
-        description: 仓位方向：LONG;SHORT
+        description: Position side:LONG;SHORT
         ranges: LONG;SHORT
 left_code_blocks:
     -

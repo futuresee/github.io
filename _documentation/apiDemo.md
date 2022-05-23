@@ -1,5 +1,5 @@
 ---
-title: API 代码库
+title: API Library
 position_number: 7
 parameters:
 - name:
@@ -8,7 +8,7 @@ content_markdown: >-
   Java connector
 
 
-  一个轻量级的Java代码库，提供让用户直接调用API的方法。
+  A lightweight Java code library that provides a method for users to directly call the API
 
 
   [https://github.com/futuresee/api-demo-java](https://github.com/futuresee/api-demo-java)

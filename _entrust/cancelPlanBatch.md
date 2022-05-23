@@ -1,5 +1,5 @@
 ---
-title: 撤销所有计划委托
+title: Cancel All Trigger Orders
 position_number: 3
 type: post
 description: /future/trade/v1/entrust/cancel-all-plan
@@ -9,7 +9,7 @@ parameters:
         type: string
         mandatory: false
         default: N/A
-        description: 交易对（不传时撤销所有交易对）
+        description: Trading pair (cancel all trading pair orders if don't pass parameters)
         ranges:
 left_code_blocks:
     -

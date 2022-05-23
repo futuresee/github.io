@@ -28,7 +28,7 @@ right_code_blocks:
           "closeProfit": 0, //平仓盈亏
           "createdTime": 0, //创建时间
           "executedQty": 0, //已成交数量（张）
-          "forceClose": false, //是否是全平订单
+          "forceClose": false, //是否是强平订单
           "marginFrozen": 0, //占用保证金
           "orderId": 0, //订单id
           "orderSide": "", //买卖方向

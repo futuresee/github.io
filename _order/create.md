@@ -1,5 +1,5 @@
 ---
-title: 下单
+title: Create Orders
 position_number: 1
 type: post
 description: /future/trade/v1/order/create
@@ -9,84 +9,77 @@ parameters:
         type: string
         mandatory: false
         default: N/A
-        description: 自定义订单id
+        description: Client order ID
         ranges:
     -
         name: symbol
         type: string
         mandatory: false
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
     -
         name: orderSide
         type: string
         mandatory: true
         default: N/A
-        description: 买卖方向：BUY;SELL
+        description: Order side:BUY;SELL
         ranges: BUY;SELL
     -
         name: orderType
         type: string
         mandatory: true
         default: N/A
-        description: 订单类型：LIMIT；MARKET
+        description: Order type:LIMIT；MARKET
         ranges: LIMIT；MARKET
     -
         name: origQty
         type: number
         mandatory: true
         default: N/A
-        description: 数量（张）
+        description: Quantity (Cont)
         ranges:
-    -
-        name: marketOrderLevel
-        type: number
-        mandatory: false
-        default: N/A
-        description: 市价最优档：1：对手价；5，10，15挡
-        ranges: 1;5;10;15
     -
         name: price
         type: number
         mandatory: false
         default: N/A
-        description: 价格
+        description: Price
         ranges:
     -
         name: reduceOnly
         type: boolean
         mandatory: false
         default: false
-        description: 只减仓
+        description: Reduce only
         ranges:
     -
         name: timeInForce
         type: string
         mandatory: false
         default: GTC
-        description: 有效方式：GTC;IOC;FOK;GTX
+        description: Valid way:GTC;IOC;FOK;GTX
         ranges: GTC;IOC;FOK;GTX
     -
         name: triggerProfitPrice
         type: number
         mandatory: false
         default: N/A
-        description: 止盈价
+        description: Stop profit price
         ranges:
     -
         name: triggerStopPrice
         type: number
         mandatory: false
         default: N/A
-        description: 止损价
+        description: Stop loss price
         ranges:
     -
         name: positionSide
         type: string
         mandatory: true
         default: N/A
-        description: 仓位方向：LONG;SHORT
+        description: Position side:LONG;SHORT
         ranges: LONG;SHORT
 left_code_blocks:
     -

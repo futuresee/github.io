@@ -1,5 +1,5 @@
 ---
-title: 撤销计划委托
+title: Cancel Trigger Orders
 position_number: 2
 type: post
 description: /future/trade/v1/entrust/cancel-plan
@@ -9,7 +9,7 @@ parameters:
         type: integer
         mandatory: true
         default: N/A
-        description: 计划委托id
+        description: Trigger order ID
         ranges:
 left_code_blocks:
     -

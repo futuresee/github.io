@@ -1,33 +1,31 @@
 ---
-title: 签名说明
+title: Signature Statement
 position_number: 4
 parameters:
 - name:
 content:
 content_markdown: >-
-    由于XT需要为第三方平台提供一些开放性的接口，所以需要接口的数据安全问题，比如数据是否被篡改，数据是否已过时，数据是否可以重复提交，接口在某个时间内访问频率等问题。其中数据是否被篡改是最重要的。
+    Since XT needs to provide some open interfaces for third-party platforms, it requires data security issues of the interface, such as whether the data has been tampered with, whether the data is outdated, whether the data can be submitted repeatedly, and the frequency of access to the interface within a certain period of time. Among them, whether the data has been tampered with is most important.
 
 
-    1、线下分配appkey和secretkey，针对不同的调用，提供不同的appkey和secretkey
+    1. Offline distribution of appkey and secretkey, for different calls, provide different appkey and secretkey.
     
 
-    2、加入timestamp(时间戳)，其值应当是请求发送时刻的unix时间戳(毫秒)，数据的有郊时间根据此值来计算。
+    2. Add timestamp, the value of which should be the unix timestamp (milliseconds) of the time when the request is sent, and the valid time of the data is calculated according to this value.
     
 
-    3、加入signature(数据签名)，所有数据的签名信息。
+    3. Add signature information for all data.
     
 
-    4、加入recvwindow(自定义请求有效时间)，有效时间目前相对简单统一固定为某个值，比如：同api同appid下10分钟内数据都有郊，此处可以再进步优化到具体单个api有效时间都不相同。
+    4. Add recvwindow, the valid time is relatively simple and fixed to a certain value. For example, the data is valid within 10 minutes under the same api and appid. Here, it can be further optimized to the valid time of a single api is different.
     
 
-      服务器收到请求时会判断请求中的时间戳，最长60秒，默认为5秒，如果是5000毫秒之前发出的，则请求会被认为无效。这个时间窗口值可以通过发送可选参数recvWindow来自定义。
-      另外，如果服务器计算得出客户端时间戳在服务器时间的‘未来’一秒以上，也会拒绝请求。
-      关于交易时效性 互联网状况并不100%可靠，不可完全依赖,因此你的程序本地到xt服务器的时延会有抖动. 这是我们设置recvWindow的目的所在，如果你从事高频交易，对交易时效性有较高的要求，可以灵活设置recvWindow以达到你的要求。
+      The server determines the timestamp when it receives a request. Up to 60 seconds, and the default is 5 seconds. If it was sent 5000 milliseconds ago, the request will be considered invalid. This time window value can be customized by sending the optional parameter recvWindow. In addition, the server will also reject the request if it calculates that the client timestamp is more than one second 'in the future' of server time. Regarding the transaction timeliness, the Internet is not 100% reliable and cannot be completely relied upon, so your application's local time delay to the XT server may be jitter.This is the purpose of setting recvWindow. If you are engaged in high-frequency trading and have high requirements for trading timeliness, you can flexibly set recvWindow to meet your requirements.
 
-      不推荐使用5秒以上的recvWindow
+      RecvWindow for more than 5 seconds is not recommended.
       
 
-    5、加入algorithms (签名方法/算法)，用户计算签名是基于哈希的协议，此处默认使用HmacSHA256。具体支持那些协议，请参见下面表格中所列出
+    5、5. Add algorithms (signature method/algorithm). User's signature calculation is a HSC-based protocol, where HmacSHA256 is used by default. See the specific supported protocols listed in the table below.
 examples:
   -
     name: xt-validate-appkey
@@ -47,7 +45,7 @@ examples:
   -
     name: xt-validate-recvwindow
     mandatory: false
-    example: 5000(毫秒)
+    example: 5000(millisecond)
     description:
   -
     name: xt-validate-algorithms
@@ -58,12 +56,12 @@ examples:
     name: xt-api-version
     mandatory: false
     example: 1.0
-    description: 保留，API版本号
+    description: Reserved, API version number
   -
     name: xt-validate-signversion
     mandatory: false
     example: 1.0
-    description: 保留，签名版本号
+    description: Reserved, signature version number
 
 left_code_blocks:
 - code_block:

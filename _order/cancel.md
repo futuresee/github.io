@@ -1,5 +1,5 @@
 ---
-title: 撤销订单
+title: Cancel Orders
 position_number: 5
 type: post
 description: /future/trade/v1/order/cancel
@@ -8,7 +8,7 @@ parameters:
     type: Integer
     mandatory: true
     default: N/A
-    description: 订单id
+    description: Order ID
     ranges:
 right_code_blocks:
   - code_block: |-
@@ -18,7 +18,7 @@ right_code_blocks:
           "msg": ""
         },
         "msgInfo": "",
-        "result": "", //订单id
+        "result": "", //Order ID
         "returnCode": 0
       }
     title: Response

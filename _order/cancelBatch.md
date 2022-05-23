@@ -1,5 +1,5 @@
 ---
-title: 撤销所有订单
+title: Cancel All Orders
 position_number: 6
 type: post
 description: /future/trade/v1/order/cancel-all
@@ -8,7 +8,7 @@ parameters:
     type: String
     mandatory: true
     default: N/A
-    description: 交易对（不传时撤销所有交易对订单）
+    description: Trading pair (cancel all trading pair orders if don't pass parameters)
     ranges:
 right_code_blocks:
   - code_block: |-

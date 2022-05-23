@@ -1,10 +1,10 @@
 ---
-title: 返回格式
+title: Return Format
 position_number: 8
 parameters:
 - name:
 content:
-content_markdown: 所有的接口返回都是JSON格式。
+content_markdown: All interfaces’ returns are in JSON format.
 left_code_blocks:
 - code_block:
   title:

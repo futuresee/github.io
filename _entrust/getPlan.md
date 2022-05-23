@@ -1,5 +1,5 @@
 ---
-title: 查询计划委托
+title: See Trigger Orders
 position_number: 4
 type: get
 description: /future/trade/v1/entrust/plan-list
@@ -9,35 +9,35 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: "交易对（不传时撤销所有交易对）\t"
+        description: "Trading pairs (queries all trading pairs if not passed)\t"
         ranges:
     -
         name: page
         type: integer
         mandatory: false
         default: 1
-        description: 页码
+        description: Page
         ranges:
     -
         name: size
         type: integer
         mandatory: false
         default: 10
-        description: 单页数
+        description: Quantity of a single page
         ranges:
     -
         name: startTime
         type: integer
         mandatory: false
         default: N/A
-        description: 开始时间
+        description: Start time
         ranges:
     -
         name: endTime
         type: integer
         mandatory: false
         default: N/A
-        description: 结束时间
+        description: End time
         ranges:
     -
         name: state
@@ -45,8 +45,8 @@ parameters:
         mandatory: true
         default: N/A
         description: >-
-            委托状态
-            NOT_TRIGGERED：新建委托（未触发）；TRIGGERING：触发中；TRIGGERED：已触发；USER_REVOCATION：用户撤销；PLATFORM_REVOCATION：平台撤销（拒绝）；EXPIRED：已过期；UNFINISHED：未完成；HISTORY：（历史）
+            Order status
+            NOT_TRIGGERED：New order (not triggered);TRIGGERING:Triggering;TRIGGERED:Triggered;USER_REVOCATION:User revocation;PLATFORM_REVOCATION:Platform revocation (rejection);EXPIRED:expired;UNFINISHED:Unfinished;HISTORY:(History)
         ranges: >-
             NOT_TRIGGERED;TRIGGERING;TRIGGERED;USER_REVOCATION;PLATFORM_REVOCATION;EXPIRED;UNFINISHED;HISTORY
 left_code_blocks:
@@ -65,21 +65,21 @@ right_code_blocks:
           "result": {
             "items": [
               {
-                "closePosition": false, //是否触发全平
-                "createdTime": 0, //创建时间
-                "entrustId": 0, //委托id
-                "entrustType": "", //委托类型
-                "marketOrderLevel": 0, //市价最优档
-                "orderSide": "", //买卖方向
+                "closePosition": false, //Whether triggered to close all
+                "createdTime": 0, //Create time
+                "entrustId": 0, //Order ID
+                "entrustType": "", //Order type
+                "marketOrderLevel": 0, //Best market price
+                "orderSide": "", //Order side
                 "ordinary": true,
-                "origQty": 0, //数量（张）
-                "positionSide": "", //持仓方向
-                "price": 0, //订单价格
-                "state": "", //订单状态 NOT_TRIGGERED：新建委托（未触发）；TRIGGERING：触发中；TRIGGERED：已触发；USER_REVOCATION：用户撤销；PLATFORM_REVOCATION：平台撤销（拒绝）；EXPIRED：已过期
-                "stopPrice": 0, //触发价格
-                "symbol": "", //交易对
-                "timeInForce": "", //有效方式
-                "triggerPriceType": "" //触发价格类型
+                "origQty": 0, //Quantity (Cont)
+                "positionSide": "", //osition side
+                "price": 0, //Order price
+                "state": "", //Order state:NOT_TRIGGERED：New order (not triggered);TRIGGERING:Triggering;TRIGGERED:Triggered;USER_REVOCATION:User revocation;PLATFORM_REVOCATION:Platform revocation (rejection);EXPIRED:expired;UNFINISHED:Unfinished;HISTORY:(History)
+                "stopPrice": 0, //Trigger price
+                "symbol": "", //Trading pair
+                "timeInForce": "", //Valid way
+                "triggerPriceType": "" //Trigger price type
               }
             ],
             "page": 0,
