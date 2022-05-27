@@ -1,5 +1,5 @@
 ---
-title: 获取资金费用
+title: Get Fund Fee Information
 position_number: 6
 type: get
 description: /future/user/v1/balance/funding-rate-list
@@ -7,16 +7,16 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
-        description: 交易对
+        description: "Trading pairs (queries all trading pairs if not passed)\t"
         ranges:
     -
         name: direction
         type: string
         mandatory: false
         default: NEXT
-        description: "方向（PREV:上一页；NEXT:下一页）\t"
+        description: "Direction（PREV:Previous page；NEXT:Next page）\t"
         ranges: PREV;NEXT
     -
         name: id
@@ -30,21 +30,21 @@ parameters:
         type: integer
         mandatory: false
         default: 10
-        description: "条数\t"
+        description: "Limit\t"
         ranges:
     -
         name: startTime
         type: integer
         mandatory: false
         default: N/A
-        description: 起始时间
+        description: Start time
         ranges:
     -
         name: endTime
         type: integer
         mandatory: false
         default: N/A
-        description: 结束时间
+        description: End time
         ranges:
 left_code_blocks:
     -
@@ -60,16 +60,16 @@ right_code_blocks:
           },
           "msgInfo": "",
           "result": {
-            "hasNext": false, //是否有下一页
-            "hasPrev": false, //是否有上一页
-            "items": [ //数据列表
+            "hasNext": false, //Is there a next page
+            "hasPrev": false, //Is there a previous page
+            "items": [ //Datasheets
               {
-                "cast": 0, //资金费用
-                "coin": "", //币种
-                "createdTime": 0, //时间
+                "cast": 0, //Fund fee
+                "coin": "", //Currency
+                "createdTime": 0, //Time
                 "id": 0, //id
-                "positionSide": "", //方向
-                "symbol": "" //交易对
+                "positionSide": "", //Direction
+                "symbol": "" //Trading pair
               }
             ]
           },

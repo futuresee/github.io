@@ -1,5 +1,5 @@
 ---
-title: 获取账户相关信息
+title: Get Account Related Information
 position_number: 1
 type: get
 description: /future/user/v1/account/info
@@ -17,13 +17,13 @@ right_code_blocks:
           },
           "msgInfo": "",
           "result": {
-            "accountId": 0, //帐户id
-            "allowOpenPosition": false, //是否可开仓
-            "allowTrade": false, //是否可以交易
-            "allowTransfer": false, //是否可以划转
-            "openTime": "", //开通时间
-            "state": 0, //用户状态
-            "userId": 0 //用户id
+            "accountId": 0, //Account ID
+            "allowOpenPosition": false, //Is it possible to open position
+            "allowTrade": false, //Is it possible to trade
+            "allowTransfer": false, //Is it possible to transfer
+            "openTime": "", //Opening time
+            "state": 0, //User status
+            "userId": 0 //User ID
           },
           "returnCode": 0
         }

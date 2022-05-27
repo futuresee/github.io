@@ -1,5 +1,5 @@
 ---
-title: 一键平仓
+title: Close All
 position_number: 11
 type: post
 description: /future/user/v1/position/close-all

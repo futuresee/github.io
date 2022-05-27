@@ -1,5 +1,5 @@
 ---
-title: 获取listenKey
+title: Get ListenKey
 position_number: 1.1
 type: post
 description: /future/user/v1/user/listen-key
@@ -9,7 +9,7 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易对（不传时查询所有交易对的持仓信息）
+        description: Trading pair
         ranges:
 left_code_blocks:
     -

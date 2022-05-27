@@ -1,5 +1,5 @@
 ---
-title: 获取单个交易对的配置信息
+title: Get Configuration Information for Single Trading Pair
 position_number: 2
 type: get
 description: /future/market/v1/public/symbol/detail
@@ -9,9 +9,9 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
-content_markdown: 注：**此方法不需要签名**
+content_markdown: Note：This method does not require a signature.
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
@@ -26,37 +26,37 @@ right_code_blocks:
           },
           "msgInfo": "",
           "result": {
-            "baseCoin": "", //标的资产
-            "baseCoinDisplayPrecision": 0, //标的币种显示精度
-            "baseCoinPrecision": 0, //标的币种精度
-            "contractSize": 0, //合约乘数（面值）
-            "contractType": "", //合约类型，永续，交割
-            "depthPrecisionMerge": 0, //盘口精度合并
-            "initLeverage": 0, //初始杠杆倍数
-            "labels": [], //标签
-            "liquidationFee": 0, //强平手续费
-            "makerFee": 0, //maker手续费
-            "maxEntrusts": 0, //最多open条件单
-            "maxOpenOrders": 0, //最多open订单
-            "minNotional": 0, //最小名义价值
-            "minPrice": 0, //最小价格
-            "minQty": 0, //最小数量
-            "multiplierDown": 0, //限价卖单下限百分比
-            "multiplierUp": 0, //限价买单价格上限百分比
-            "onboardDate": 0, //上线时间
-            "pricePrecision": 0, //价格精度
-            "quantityPrecision": 0, //数量精度
-            "quoteCoin": "", //报价资产
-            "quoteCoinDisplayPrecision": 0, //报价币种显示精度
-            "quoteCoinPrecision": 0, //报价币种精度
-            "state": 0, //状态
-            "supportEntrustType": "", //支持计划委托类型
-            "supportOrderType": "", //支持订单类型
-            "supportTimeInForce": "", //支持有效方式
-            "symbol": "", //交易对
-            "takerFee": 0, //taker手续费
-            "tradeSwitch": false, //交易对开关
-            "underlyingType": "" //标的类型，币本位，u本位
+            "baseCoin": "", //Target Assets
+            "baseCoinDisplayPrecision": 0, //Displayed target currency precision
+            "baseCoinPrecision": 0, //Target currency precision
+            "contractSize": 0, //Contract multiplier(face value)
+            "contractType": "", //Contract type, perpetual, delivery
+            "depthPrecisionMerge": 0, //Handicap Precision Consolidation
+            "initLeverage": 0, //Initial leverage
+            "labels": [], //Label
+            "liquidationFee": 0, //Forced liquidation fee
+            "makerFee": 0, //Maker fee
+            "maxEntrusts": 0, //Maximum active orders
+            "maxOpenOrders": 0, //Maximum open orders
+            "minNotional": 0, //Minimum notional value
+            "minPrice": 0, //Minimum price
+            "minQty": 0, //Minimum quantity
+            "multiplierDown": 0, //Floor percentage of sell limit order
+            "multiplierUp": 0, //Cap percentage of buy limit order
+            "onboardDate": 0, //List time
+            "pricePrecision": 0, //Price precision
+            "quantityPrecision": 0, //Quantity precision
+            "quoteCoin": "", //Quote currency
+            "quoteCoinDisplayPrecision": 0, //Displayed quote currency precision
+            "quoteCoinPrecision": 0, //Quote currency precision
+            "state": 0, //Status
+            "supportEntrustType": "", //Trigger order type supported
+            "supportOrderType": "", //Order type supported
+            "supportTimeInForce": "", //Valid ways supported
+            "symbol": "", //Trading pair
+            "takerFee": 0, //Taker fee
+            "tradeSwitch": false, //Trading pair switch
+            "underlyingType": "" //Target type, Coin-M,USDT-M
           },
           "returnCode": 0
         }

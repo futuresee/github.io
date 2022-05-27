@@ -46,7 +46,7 @@ right_code_blocks:
             "onboardDate": 0, //上线时间
             "pricePrecision": 0, //价格精度
             "quantityPrecision": 0, //数量精度
-            "quoteCoin": "", //报价资产
+            "quoteCoin": "", //报价币种
             "quoteCoinDisplayPrecision": 0, //报价币种显示精度
             "quoteCoinPrecision": 0, //报价币种精度
             "state": 0, //状态

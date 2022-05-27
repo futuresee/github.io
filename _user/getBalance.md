@@ -1,5 +1,5 @@
 ---
-title: 获取用户单币种资金
+title: Get User's Single Currency Fund Information
 position_number: 3
 type: get
 description: /future/user/v1/balance/detail
@@ -9,7 +9,7 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 币种
+        description: Currency
         ranges:
 left_code_blocks:
     -
@@ -25,11 +25,11 @@ right_code_blocks:
           },
           "msgInfo": "",
           "result": {
-            "availableBalance": 0, //可用余额
-            "coin": "", //币种
-            "isolatedMargin": 0, //逐仓保证金冻结
-            "openOrderMarginFrozen": 0, //订单冻结
-            "walletBalance": 0 //钱包余额
+            "availableBalance": 0, //Available balance
+            "coin": "", //Currency
+            "isolatedMargin": 0, //Frozen isolated margin
+            "openOrderMarginFrozen": 0, //Frozen order
+            "walletBalance": 0 //Balance
           },
           "returnCode": 0
         }

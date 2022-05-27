@@ -1,5 +1,5 @@
 ---
-title: 查询成交明细
+title: See Transaction Details
 position_number: 1.1
 type: get
 description: /future/trade/v1/order/trade-list
@@ -9,28 +9,28 @@ parameters:
         type: integer
         mandatory: false
         default: N/A
-        description: 订单id
+        description: Order ID
         ranges:
     -
         name: symbol
         type: string
         mandatory: false
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
     -
         name: page
         type: integer
         mandatory: false
         default: 1
-        description: "页码\t"
+        description: "Page\t"
         ranges:
     -
         name: size
         type: integer
         mandatory: false
         default: 10
-        description: "单页数\t"
+        description: "Quantity of a single page\t"
         ranges:
     -
         name: startTime
@@ -62,14 +62,14 @@ right_code_blocks:
           "result": {
             "items": [
               {
-                "fee": 0, //手续费
-                "feeCoin": "", //手续费币种
-                "orderId": 0, //订单id
-                "execId": 0, //成交id
-                "price": 0, //成交价格
-                "quantity": 0, //成交数量
-                "symbol": "", //交易对
-                "timestamp": 0 //时间
+                "fee": 0, //Fee
+                "feeCoin": "", //Currency of fee
+                "orderId": 0, //Order ID
+                "execId": 0, //Trade ID
+                "price": 0, //Price
+                "quantity": 0, //Volume
+                "symbol": "", //Trading pair
+                "timestamp": 0 //Time
               }
             ],
             "page": 0,

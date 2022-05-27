@@ -1,5 +1,5 @@
 ---
-title: 收藏交易对列表
+title: List of Collected Trading Pairs
 position_number: 15
 type: post
 description: /future/user/v1/user/collection/list

@@ -1,5 +1,5 @@
 ---
-title: 查询单个交易对杠杆分层
+title: See Leverage Stratification of Single Trading Pair
 position_number: 4
 type: get
 description: /future/market/v1/public/leverage/bracket/detail
@@ -9,9 +9,9 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
-content_markdown: 注：**此方法不需要签名**
+content_markdown: Note：This method does not require a signature.
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
@@ -28,14 +28,14 @@ right_code_blocks:
           "result": {
             "leverageBrackets": [
               {
-                "bracket": 0, //档位
-                "maintMarginRate": 0, //维持保证金率
-                "maxLeverage": 0, //最大杠杆倍数
-                "maxNominalValue": 0, //该层最大名义价值
-                "maxStartMarginRate": 0, //最大起始保证金率
-                "minLeverage": 0, //最小杠杆倍数
-                "startMarginRate": 0, //起始保证金率
-                "symbol": "" //交易对
+                "bracket": 0, //Level
+                "maintMarginRate": 0, //Maintain margin rate
+                "maxLeverage": 0, //Maximum leverage
+                "maxNominalValue": 0, //Maximum notional value
+                "maxStartMarginRate": 0, //Maximum initial margin rate
+                "minLeverage": 0, //Minimum leverage
+                "startMarginRate": 0, //Initial margin rate
+                "symbol": "" //Trading pair
               }
             ],
             "symbol": ""

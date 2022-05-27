@@ -1,5 +1,5 @@
 ---
-title: 取消收藏交易对
+title: Cancel Trading Pair Collection
 position_number: 14
 type: post
 description: /future/user/v1/user/collection/cancel
@@ -9,7 +9,7 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易对（不传时查询所有交易对的持仓信息）
+        description: Trading pair
         ranges:
 left_code_blocks:
     -

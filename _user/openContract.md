@@ -1,5 +1,5 @@
 ---
-title: 开通合约
+title: Open Contract
 position_number: 2
 type: post
 description: /future/user/v1/account/open

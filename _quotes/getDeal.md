@@ -1,5 +1,5 @@
 ---
-title: 获取交易对的最新成交信息
+title: Get Latest Transaction Information of Trading Pairs
 position_number: 8
 type: get
 description: /future/market/v1/public/q/deal
@@ -9,14 +9,14 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
     -
         name: num
         type: integer
         mandatory: true
         default: N/A
-        description: 数量
+        description: Quantity
         ranges:
 content_markdown: 注：**此方法不需要签名**
 left_code_blocks:
@@ -34,11 +34,11 @@ right_code_blocks:
           "msgInfo": "",
           "result": [
             {
-              "a": 0, //成交量
-              "m": "", //买卖方向
-              "p": 0, //成交价
-              "s": "", //交易对
-              "t": 0 //成交时间
+              "a": 0, //Volume
+              "m": "", //Order side
+              "p": 0, //Price
+              "s": "", //Trading pair
+              "t": 0 //Time
             }
           ],
           "returnCode": 0

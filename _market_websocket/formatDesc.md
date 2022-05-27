@@ -1,5 +1,5 @@
 ---
-title: 格式说明
+title: Format Description
 position_number: 3
 type:
 description:
@@ -12,9 +12,9 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    正式:
+    Official:
 
-    **事件推送，固定格式:
+    **Event prompt, fixed format:
     {
      "channel":"",
      "data":{}

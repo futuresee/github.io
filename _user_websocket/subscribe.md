@@ -1,5 +1,5 @@
 ---
-title: 用户订阅
+title: Users subscription
 position_number: 1
 type:
 description:
@@ -12,17 +12,17 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    用户ws订阅地址:  https://xxx.xxx.xxx/ws/user
+    WS user subscription address:wss://fstream.xt.com/ws/user
     
-    第一步：用户要先调用接口:/v1/user/listen-key   获取listenKey
+    Step 1: The user need to call the interface: /v1/user/listen-key to get the listenKey.
     
-    第二步：订阅用户相关的websocket事件时需要发送：{"req":"sub_user", "listenKey":"上一步获取的listenKey"}
+    第二步：Step 2: When subscribing to user-related websocket events, users need to send: {"req":"sub_user", "listenKey":"listenKey obtained in the previous step"}
 
-    如果收到"invalid_listen_key"表示listenKey过期或者无效，需要重新请求获取listenKey
+    If you receive "invalid_listen_key", it means that the listenKey is expired or invalid, and you need to re-request to obtain the listenKey.
 
-    ps：listenKey通过接口获取
+    ps: listenKey is obtained through the interface.
 
-    订阅之后会推送用户相关数据
+    User-related data will be pushed after subscription.
     
 
 left_code_blocks:

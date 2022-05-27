@@ -1,5 +1,5 @@
 ---
-title: 收藏交易对
+title: Collect Trading Pair
 position_number: 13
 type: post
 description: /future/user/v1/user/collection/add
@@ -7,9 +7,9 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
-        description: 交易对（不传时查询所有交易对的持仓信息）
+        description: Trading pair
         ranges:
 left_code_blocks:
     -

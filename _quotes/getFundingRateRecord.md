@@ -1,5 +1,5 @@
 ---
-title: 获取资金费率记录
+title: Get Funding Rate Records
 position_number: 18
 type: get
 description: /future/market/v1/public/q/funding-rate-record
@@ -9,14 +9,14 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
     -
         name: direction
         type: string
         mandatory: false
         default: NEXT
-        description: "方向（PREV:上一页；NEXT:下一页）\t"
+        description: "Direction（PREV:Previous page；NEXT:Next page）\t"
         ranges: PREV;NEXT
     -
         name: id
@@ -30,9 +30,9 @@ parameters:
         type: integer
         mandatory: false
         default: 10
-        description: "条数\t"
+        description: "Limit\t"
         ranges:
-content_markdown: 注：**此方法不需要签名**
+content_markdown: Note：This method does not require a signature.
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
@@ -47,15 +47,15 @@ right_code_blocks:
           },
           "msgInfo": "",
           "result": {
-            "hasNext": false, //是否有下一页
-            "hasPrev": false, //是否有上一页
-            "items": [ //数据列表
+            "hasNext": false, //Is there a next page
+            "hasPrev": false, //Is there a previous page
+            "items": [ //Datasheets
               {
-                "collectionInternal": 0, //收取时间间隔（秒）
-                "createdTime": 0, //时间
-                "fundingRate": 0, //最新资金费率
+                "collectionInternal": 0, //Billing Cycle (second)
+                "createdTime": 0, //Time
+                "fundingRate": 0, //Latest funding rate
                 "id": 0, //id
-                "symbol": "" //交易对
+                "symbol": "" //Trading pair
               }
             ]
           },

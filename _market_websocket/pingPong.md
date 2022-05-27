@@ -1,5 +1,5 @@
 ---
-title: 连接心跳
+title: Prompt Message
 position_number: 2
 type:
 description:
@@ -12,7 +12,7 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    **每个链接，客户端需要定期发送ping消息，服务端会回复pong的消息，服务端再1分钟左右没有收到前端的ping消息，会主动断开链接**
+    **For each link, the client-side will periodically send a ping message, and the server-side will reply with a pong message. If the server-side does not receive the ping message from the front end for about one minute, the server will automatically disconnect with the client.**
     {: .info}
 
 left_code_blocks:

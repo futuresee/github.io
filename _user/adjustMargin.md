@@ -1,5 +1,5 @@
 ---
-title: 修改保证金
+title: Alter Margin
 position_number: 9
 type: post
 description: /future/user/v1/position/margin
@@ -7,30 +7,30 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
-        description: 交易对（不传时查询所有交易对的持仓信息）
+        description: Trading pair
         ranges:
     -
         name: margin
         type: number
         mandatory: false
         default: N/A
-        description: 数量
+        description: Quantity
         ranges:
     -
         name: positionSide
         type: string
         mandatory: false
         default: N/A
-        description: 持仓方向：LONG;SHORT
+        description: Position side:LONG;SHORT
         ranges:
     -
         name: type
         type: string
         mandatory: false
         default: N/A
-        description: 调整方向（ADD：增加逐仓保证金；SUB：减少逐仓保证金）
+        description: Adjust direction (add isolated margin, reduce isolated margin)
         ranges: ADD;SUB
 left_code_blocks:
     -

@@ -65,7 +65,7 @@ right_code_blocks:
             {
               "clientOrderId": "", //Client order ID
               "avgPrice": 0, //Average price
-              "closePosition": false, //hether to close all when order condition is triggered
+              "closePosition": false, //Whether to close all when order condition is triggered
               "closeProfit": 0, //Offset profit and loss
               "createdTime": 0, //Creat time
               "executedQty": 0, //Volume (Cont)

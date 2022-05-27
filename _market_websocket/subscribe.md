@@ -1,5 +1,5 @@
 ---
-title: 行情订阅
+title: Market Information Subscription
 position_number: 4
 type:
 description:
@@ -12,16 +12,16 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    订阅24小时行情 ticker：
+    Subscribe to the 24-hour market information ticker：
     ```js
     {
      "req":"sub_ticker",
      "symbol":"btc_usdt,eth_usdt"
     }
     ```
-    ps: symbol 非必传，不传则订阅所有交易对
+    ps: Symbol field is not required to pass parameters, if don't pass parameters, subscribe to all trading pairs
 
-    取消订阅24小时行情: 
+    Unsubscribe to the aggregated 24-hour market information:
     ```js
     {
      "req":"unsub_ticker"
@@ -29,7 +29,7 @@ content_markdown: |-
     ```
 
 
-    K线订阅:
+    Kline subscription:
     ```js
     {
      "req":"sub_kline",
@@ -37,9 +37,9 @@ content_markdown: |-
     }
     ```
 
-    ps:K线订阅type类型:  1m 5m 15m 30m 1h 4h 1d  1w 
+    Type of Kline subscription:1m 5m 15m 30m 1h 4h 1d  1w 
 
-    K线取消订阅:
+    Kline unsubscription:
     ```js
     {
      "req":"unsub_kline"
@@ -48,7 +48,7 @@ content_markdown: |-
 
 
 
-    订阅24小时聚合行情 aggTicker：
+    Subscribe to the aggregated 24-hour market information aggTicker：
     ```js
     {
      "req":"sub_agg_ticker",
@@ -56,9 +56,9 @@ content_markdown: |-
     }
     ```
 
-    ps: symbol 非必传，不传则订阅所有交易对
+    ps: Symbol field is not required to pass parameters, if don't pass parameters, subscribe to all trading pairs
 
-    取消24小时聚合行情订阅:
+    Unsubscribe to the aggregated 24-hour market information:
     ```js
     {
      "req":"unsub_agg_ticker"
@@ -67,7 +67,7 @@ content_markdown: |-
 
 
 
-    指数价格订阅：
+    Index price subscription:
     ```js
     {
      "req":"sub_index_price",
@@ -75,32 +75,32 @@ content_markdown: |-
     }
     ```
 
-    ps: symbol 非必传，不传则订阅所有交易对
+    ps: Symbol field is not required to pass parameters, if don't pass parameters, subscribe to all trading pairs
 
-    取消指数价格订阅：
+    Index price unsubscription:
     ```js
     {
      "req":"unsub_index_price"
     }
     ```
 
-    标记价格订阅：
+    Mark price subscription:
     ```js
     {
      "req":"sub_mark_price",
      "symbol":"btc_usdt,eth_usdt"
     }
     ```
-    ps: symbol 非必传，不传则订阅所有交易对
+    ps: Symbol field is not required to pass parameters, if don't pass parameters, subscribe to all trading pairs
 
-    取消标记价格订阅：
+    Mark price unsubscription:
     ```js
     {
      "req":"unsub_mark_price"
     }
     ```
 
-    订阅交易对：
+    Trading pairs subscription:
     ```js
      {
       "req":"sub_symbol",
@@ -108,16 +108,16 @@ content_markdown: |-
      }
     ```
 
-    ps:订阅交易对之后，会推送这个交易对的index.price、mark.price、ticker、agg.ticker、deal、deep、deep.full、fund.rate的消息
+    After subscribing to trading pairs, news of the index.price、mark.price、ticker、agg.ticker、deal、deep、deep.full、fund.rate of the trading pair will be pushed.
 
-    取消交易对订阅:
+    Trading pairs unsubscription:
     ```js
     {
      "req":"unsub_symbol"
     }
     ```
 
-    订阅多交易对深度：
+    Subscribe to Multi-Pair Depth:
     ```js
     {
      "req":"sub_depth",
@@ -125,11 +125,11 @@ content_markdown: |-
     }
     ```
 
-    ps:多交易对深度订阅，交易对以逗号隔开，最多订阅十个交易对深度，会推送所订阅的交易对的deep、deep.full的消息
+    ps:Multiple trading pair depth subscriptions, trading pairs are separated by commas, and a maximum of ten trading pair depths can be subscribed, and the deep and deep.full messages of the subscribed trading pairs will be pushed.
 
 
 
-    sub_mark_price、sub_index_price、sub_agg_ticker、sub_ticker批量订阅每3秒推送一次
+    sub_mark_price、sub_index_price、sub_agg_ticker、sub_ticker Bulk subscription pushes every 3 seconds
 
 left_code_blocks:
 -

@@ -1,5 +1,5 @@
 ---
-title: 修改自动追加保证金
+title: Alter the automatical margin call
 position_number: 10
 type: post
 description: /future/user/v1/position/auto-margin
@@ -9,21 +9,21 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
     -
         name: positionSide
         type: string
         mandatory: true
         default: N/A
-        description: 仓位方向
+        description: Position side
         ranges: LONG;SHORT
     -
         name: autoMargin
         type: boolean
         mandatory: true
         default: N/A
-        description: 是否开启自动追加保证金
+        description: Whether to automatically call margin
         ranges: true;false
 left_code_blocks:
     -

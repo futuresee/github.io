@@ -1,5 +1,5 @@
 ---
-title: 获取交易对的k线信息
+title: Get Trading Pair Information of Kline
 position_number: 14
 type: get
 description: /future/market/v1/public/q/kline
@@ -9,37 +9,37 @@ parameters:
         type: string
         mandatory: false
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
     -
         name: interval
         type: string
         mandatory: true
         default:
-        description: 时间间隔
+        description: Time-interval
         ranges: 1m;5m;15m;30m;1h;4h;1d;1w
     -
         name: startTime
         type: integer
         mandatory: false
         default: N/A
-        description: 起始时间
+        description: Start time
         ranges:
     -
         name: endTime
         type: integer
         mandatory: false
         default: N/A
-        description: 结束时间
+        description: End time
         ranges:
     -
         name: limit
         type: integer
         mandatory: false
         default: N/A
-        description: 限制条数
+        description: Limit
         ranges:
-content_markdown: 注：**此方法不需要签名**
+content_markdown: Note：This method does not require a signature.
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
@@ -55,14 +55,14 @@ right_code_blocks:
           "msgInfo": "",
           "result": [
             {
-              "a": 0, //成交量
-              "c": 0, //结束价
-              "h": 0, //最高价
-              "l": 0, //最低价
-              "o": 0, //开始价
-              "s": "", //交易对
-              "t": 0, //时间
-              "v": 0 //成交额
+              "a": 0, //Volume
+              "c": 0, //Close price
+              "h": 0, //Highest price
+              "l": 0, //Lowest price
+              "o": 0, //Open price
+              "s": "", //Trading pair
+              "t": 0, //Time
+              "v": 0 //Turnover
             }
           ],
           "returnCode": 0

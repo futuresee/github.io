@@ -1,5 +1,5 @@
 ---
-title: 行情推送
+title: Market Information Push
 position_number: 5
 type:
 description:
@@ -12,14 +12,14 @@ parameters:
         description:
         ranges:
 content_markdown: |-
-    指数价格inde.price： 
+    Index price:
     ```js
     {
      "channel":"push.index.price",
      "data":{
-       "s":"btc_usdt", //交易对
-       "p":"50000",    //价格
-       "t":123124124   //时间戳
+       "s":"btc_usdt", //trading pair
+       "p":"50000",    //price
+       "t":123124124   //timestamp
       }
     }
     ```
@@ -29,9 +29,9 @@ content_markdown: |-
      {
       "channel":"push.mark.price",
       "data":{
-         "s":"btc_usdt", //交易对
-         "p":"50000",    //价格
-         "t":123124124   //时间戳
+         "s":"btc_usdt", //trading pair
+         "p":"50000",    //price
+         "t":123124124   //timestamp
       }
      }
      ```

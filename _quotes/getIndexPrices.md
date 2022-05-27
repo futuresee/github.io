@@ -1,10 +1,10 @@
 ---
-title: 获取所有交易对的指数价格
+title: Get Index Price for All Trading Pairs
 position_number: 11
 type: get
 description: /future/market/v1/public/q/index-price
 parameters:
-content_markdown: 注：**此方法不需要签名**
+content_markdown: Note：This method does not require a signature.
 left_code_blocks:
     -
         code_block: "public void getKLine() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/market/v1/getKLine?market=btc_usdt&type=1min&since=0\");\r\n\tSystem.out.println(text);\r\n}"
@@ -20,9 +20,9 @@ right_code_blocks:
           "msgInfo": "",
           "result": [
             {
-              "p": 0, //价格
-              "s": "", //交易对
-              "t": 0 //时间
+              "p": 0, //Price
+              "s": "", //Trading pair
+              "t": 0 //Time
             }
           ],
           "returnCode": 0

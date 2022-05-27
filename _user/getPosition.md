@@ -1,5 +1,5 @@
 ---
-title: 获取持仓信息
+title: Get Position Information
 position_number: 7
 type: post
 description: /future/user/v1/position/list
@@ -9,7 +9,7 @@ parameters:
         type: string
         mandatory: false
         default: N/A
-        description: 交易对（不传时查询所有交易对的持仓信息）
+        description: Trading pair (see the position information of all trading pairs if don't pass parameters)
         ranges:
 left_code_blocks:
     -
@@ -26,18 +26,18 @@ right_code_blocks:
           "msgInfo": "",
           "result": [
             {
-              "autoMargin": false, //是否自动追加保证金
-              "availableCloseSize": 0, //可平仓数量（张）
-              "closeOrderSize": 0, //平仓挂单数量（张）
-              "entryPrice": 0, //开仓均价
-              "isolatedMargin": 0, //逐仓保证金
-              "leverage": 0, //杠杆倍数
-              "openOrderMarginFrozen": 0, //开仓订单保证金占用
-              "positionSide": "", //持仓方向
-              "positionSize": 0, //持仓数量（张）
-              "positionType": "", //仓位类型
-              "realizedProfit": 0, //已实现盈亏
-              "symbol": "" //交易对
+              "autoMargin": false, //Whether to automatically call margin
+              "availableCloseSize": 0, //Available quantity (Cont)
+              "closeOrderSize": 0, //Pending order quantity (Cont)
+              "entryPrice": 0, //Open position average price
+              "isolatedMargin": 0, //Isolated Margin
+              "leverage": 0, //Leverage
+              "openOrderMarginFrozen": 0, //Occupied open position margin
+              "positionSide": "", //Position side
+              "positionSize": 0, //Position quantity (Cont)
+              "positionType": "", //Position type
+              "realizedProfit": 0, //Realized profit and loss
+              "symbol": "" //Trading pair
             }
           ],
           "returnCode": 0

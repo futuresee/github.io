@@ -1,5 +1,5 @@
 ---
-title: 调整杠杆倍数
+title: Adjust Leverage
 position_number: 8
 type: post
 description: /future/user/v1/position/adjust-leverage
@@ -9,21 +9,21 @@ parameters:
         type: string
         mandatory: true
         default: N/A
-        description: 交易对
+        description: Trading pair
         ranges:
     -
         name: positionSide
         type: string
         mandatory: true
         default: N/A
-        description: 仓位方向
+        description: Position side
         ranges: LONG;SHORT
     -
         name: leverage
         type: integer
         mandatory: true
         default: N/A
-        description: 杠杆倍数
+        description: Leverage
         ranges:
 left_code_blocks:
     -

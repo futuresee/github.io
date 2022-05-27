@@ -1,5 +1,5 @@
 ---
-title: 获取ADL信息
+title: Get ADL Information
 position_number: 12
 type: get
 description: /future/user/v1/position/adl
@@ -18,9 +18,9 @@ right_code_blocks:
           "msgInfo": "",
           "result": [
             {
-              "longQuantile": 0, //多头adl
-              "shortQuantile": 0, //空头adl
-              "symbol": "" //交易对
+              "longQuantile": 0, //long position adl
+              "shortQuantile": 0, //Short position adl
+              "symbol": "" //Trading pair
             }
           ],
           "returnCode": 0
