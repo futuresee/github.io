@@ -2,7 +2,7 @@
 title: Alter the automatical margin call
 position_number: 10
 type: post
-description: /future/user/v1/position/auto-margin
+description: /user/v1/position/auto-margin
 parameters:
     -
         name: symbol
@@ -27,7 +27,7 @@ parameters:
         ranges: true;false
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:

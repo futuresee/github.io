@@ -2,7 +2,7 @@
 title: 取消收藏交易对
 position_number: 14
 type: post
-description: /future/user/v1/user/collection/cancel
+description: /user/v1/user/collection/cancel
 parameters:
     -
         name: symbol
@@ -13,7 +13,7 @@ parameters:
         ranges:
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:

@@ -2,21 +2,21 @@
 title: Get User's Account Flow Information
 position_number: 5
 type: get
-description: /future/user/v1/balance/bills
+description: /user/v1/balance/bills
 parameters:
     -
         name: symbol
         type: string
         mandatory: true
         default: N/A
-        description: 交易对
+        description: "Trading pairs (queries all trading pairs if not passed)\t"
         ranges:
     -
         name: direction
         type: string
         mandatory: false
         default: NEXT
-        description: "方向（PREV:上一页；NEXT:下一页）\t"
+        description: "Direction（PREV:Previous page；NEXT:Next page）\t"
         ranges: PREV;NEXT
     -
         name: id
@@ -30,25 +30,25 @@ parameters:
         type: integer
         mandatory: false
         default: 10
-        description: "条数\t"
+        description: "Limit\t"
         ranges:
     -
         name: startTime
         type: integer
         mandatory: false
         default: N/A
-        description: 起始时间
+        description: Start time
         ranges:
     -
         name: endTime
         type: integer
         mandatory: false
         default: N/A
-        description: 结束时间
+        description: End time
         ranges:
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
@@ -60,18 +60,18 @@ right_code_blocks:
           },
           "msgInfo": "",
           "result": {
-            "hasNext": false, //是否有下一页
-            "hasPrev": false, //是否有上一页
-            "items": [ //数据列表
+            "hasNext": false, //Is there a next page
+            "hasPrev": false, //Is there a previous page
+            "items": [ //Datasheets
               {
-                "afterAmount": 0, //变动后余额
-                "amount": 0, //数量
-                "coin": "", //币种
-                "createdTime": 0, //时间
+                "afterAmount": 0, //Balance after change
+                "amount": 0, //Quantity
+                "coin": "", //Currency
+                "createdTime": 0, //Time
                 "id": 0, //id
-                "side": "", //ADD:划入;SUB:转出
-                "symbol": "", //交易对
-                "type": "" //EXCHANGE:划转;CLOSE_POSITION:平仓盈亏;TAKE_OVER:仓位接管;QIANG_PING_MANAGER:强平管理费（手续费）;FUND:资金费用;FEE:手续费 (开仓、平仓、强平);ADL:自动减仓;TAKE_OVER:仓位接管MERGE:仓位合并
+                "side": "", //ADD:transfer in;SUB:transfer out
+                "symbol": "", //Trading pair
+                "type": "" //EXCHANGE:transfer;CLOSE_POSITION:Offset profit and loss;TAKE_OVER:position takeover;QIANG_PING_MANAGER:Liquidation management fee (fee);FUND:Fund Fee;FEE:Fee(Open position, liquidation, Forced liquidation);ADL:Adl;TAKE_OVER:position takeover;MERGE:Position Merge
               }
             ]
           },

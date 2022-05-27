@@ -2,7 +2,7 @@
 title: 获取用户账务流水
 position_number: 5
 type: get
-description: /future/user/v1/balance/bills
+description: /user/v1/balance/bills
 parameters:
     -
         name: symbol
@@ -48,7 +48,7 @@ parameters:
         ranges:
 left_code_blocks:
     -
-        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/future/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
+        code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"
         title: Java
         language: java
 right_code_blocks:
