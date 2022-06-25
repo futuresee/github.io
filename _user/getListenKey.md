@@ -1,7 +1,7 @@
 ---
 title: Get ListenKey
 position_number: 1.1
-type: post
+type: get
 description: /user/v1/user/listen-key
 parameters:
     -
