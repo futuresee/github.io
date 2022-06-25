@@ -1,7 +1,7 @@
 ---
 title: 获取持仓信息
 position_number: 7
-type: post
+type: get
 description: /user/v1/position/list
 parameters:
     -
