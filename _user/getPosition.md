@@ -2,7 +2,7 @@
 title: Get Position Information
 position_number: 7
 type: get
-description: /user/v1/position/list
+description: /future/user/v1/position/list
 parameters:
     -
         name: symbol

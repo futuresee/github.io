@@ -2,7 +2,7 @@
 title: 一键平仓
 position_number: 11
 type: post
-description: /user/v1/position/close-all
+description: /future/user/v1/position/close-all
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"

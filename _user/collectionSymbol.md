@@ -2,7 +2,7 @@
 title: Collect Trading Pair
 position_number: 13
 type: post
-description: /user/v1/user/collection/add
+description: /future/user/v1/user/collection/add
 parameters:
     -
         name: symbol

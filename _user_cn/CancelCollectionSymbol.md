@@ -2,7 +2,7 @@
 title: 取消收藏交易对
 position_number: 14
 type: post
-description: /user/v1/user/collection/cancel
+description: /future/user/v1/user/collection/cancel
 parameters:
     -
         name: symbol

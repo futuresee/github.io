@@ -1,8 +1,8 @@
 ---
 title: 收藏交易对列表
 position_number: 15
-type: post
-description: /user/v1/user/collection/list
+type: get
+description: /future/user/v1/user/collection/list
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"

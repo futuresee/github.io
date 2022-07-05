@@ -2,7 +2,7 @@
 title: 获取资金费用
 position_number: 6
 type: get
-description: /user/v1/balance/funding-rate-list
+description: /future/user/v1/balance/funding-rate-list
 parameters:
     -
         name: symbol

@@ -2,7 +2,7 @@
 title: 获取用户账务流水
 position_number: 5
 type: get
-description: /user/v1/balance/bills
+description: /future/user/v1/balance/bills
 parameters:
     -
         name: symbol

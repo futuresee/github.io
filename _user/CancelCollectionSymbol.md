@@ -2,7 +2,7 @@
 title: Cancel Trading Pair Collection
 position_number: 14
 type: post
-description: /user/v1/user/collection/cancel
+description: /future/user/v1/user/collection/cancel
 parameters:
     -
         name: symbol

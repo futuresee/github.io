@@ -2,7 +2,7 @@
 title: 修改保证金
 position_number: 9
 type: post
-description: /user/v1/position/margin
+description: /future/user/v1/position/margin
 parameters:
     -
         name: symbol

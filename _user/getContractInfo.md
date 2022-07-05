@@ -2,7 +2,7 @@
 title: Get Account Related Information
 position_number: 1
 type: get
-description: /user/v1/account/info
+description: /future/user/v1/account/info
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"

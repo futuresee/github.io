@@ -2,7 +2,7 @@
 title: Alter the automatical margin call
 position_number: 10
 type: post
-description: /user/v1/position/auto-margin
+description: /future/user/v1/position/auto-margin
 parameters:
     -
         name: symbol

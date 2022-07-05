@@ -2,7 +2,7 @@
 title: 获取listenKey
 position_number: 1.1
 type: get
-description: /user/v1/user/listen-key
+description: /future/user/v1/user/listen-key
 left_code_blocks:
     -
         code_block: "public void getMarketConfig() {\r\n\tString text = HttpUtil.get(URL + \"/data/api/user/v1/getMarketConfig\");\r\n\tSystem.out.println(text);\r\n}"

@@ -2,7 +2,7 @@
 title: Adjust Leverage
 position_number: 8
 type: post
-description: /user/v1/position/adjust-leverage
+description: /future/user/v1/position/adjust-leverage
 parameters:
     -
         name: symbol

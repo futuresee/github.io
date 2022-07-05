@@ -2,7 +2,7 @@
 title: Get ListenKey
 position_number: 1.1
 type: get
-description: /user/v1/user/listen-key
+description: /future/user/v1/user/listen-key
 parameters:
     -
         name: symbol
