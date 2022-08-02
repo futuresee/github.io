@@ -25,14 +25,12 @@ right_code_blocks:
             "msg": ""
           },
           "msgInfo": "",
-          "result": [
-            {
-              "symbol": "", //交易对
-              "openInterest": "", //开仓量
-              "openInterestUsd": 0, //开仓价值
-              "time": "", //时间
-            }
-          ],
+          "result": {
+            "symbol": "", //交易对
+            "openInterest": "", //开仓量
+            "openInterestUsd": 0, //开仓价值
+            "time": "", //时间
+          },
           "returnCode": 0
         }
       title: Response

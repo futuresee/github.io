@@ -25,14 +25,12 @@ right_code_blocks:
             "msg": ""
           },
           "msgInfo": "",
-          "result": [
-            {
-              "symbol": "", //Trading pair
-              "openInterest": "", //open position
-              "openInterestUsd": 0, //open value
-              "time": "", //time
-            }
-          ],
+          "result": {
+            "symbol": "", //Trading pair
+            "openInterest": "", //open position
+            "openInterestUsd": 0, //open value
+            "time": "", //time
+          },
           "returnCode": 0
         }
       title: Response
