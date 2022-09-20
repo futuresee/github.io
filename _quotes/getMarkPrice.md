@@ -2,12 +2,12 @@
 title: Get Mark Price for Single Trading Pair
 position_number: 12
 type: get
-description: /future/market/v1/public/q/symbol-index-price
+description: /future/market/v1/public/q/symbol-mark-price
 parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
         description: Trading pair
         ranges:

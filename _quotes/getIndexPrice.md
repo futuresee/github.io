@@ -7,7 +7,7 @@ parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
         description: Trading pair
         ranges:
