@@ -2,12 +2,12 @@
 title: 获取单个交易对的标记价格
 position_number: 12
 type: get
-description: /future/market/v1/public/q/symbol-index-price
+description: /future/market/v1/public/q/symbol-mark-price
 parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
         description: 交易对
         ranges:
