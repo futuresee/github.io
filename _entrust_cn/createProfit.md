@@ -2,12 +2,12 @@
 title: 创建止盈止损
 position_number: 7
 type: post
-description: /future/trade/v1/entrust/create-plan
+description: /future/trade/v1/entrust/create-profit
 parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
         description: 交易对
         ranges:

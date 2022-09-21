@@ -2,12 +2,12 @@
 title: Create Trigger Orders
 position_number: 1
 type: post
-description: /future/trade/v1/entrust/create-plan
+description: /future/trade/v1/entrust/create-profit
 parameters:
     -
         name: symbol
         type: string
-        mandatory: false
+        mandatory: true
         default: N/A
         description: Trading pair
         ranges:
